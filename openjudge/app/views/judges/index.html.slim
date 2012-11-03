@@ -1,0 +1,17 @@
+h1 Listing judges
+
+table
+  tr
+    th
+    th
+    th
+
+  - @judges.each do |judge|
+    tr
+      td = link_to 'Show', judge
+      td = link_to 'Edit', edit_judge_path(judge)
+      td = link_to 'Destroy', judge, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Judge', new_judge_path

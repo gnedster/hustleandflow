@@ -1,0 +1,9 @@
+= form_for @judge do |f|
+  - if @judge.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@judge.errors.count, "error")} prohibited this judge from being saved:"
+      ul
+        - @judge.errors.full_messages.each do |message|
+          li = message
+
+  .actions = f.submit 'Save'
