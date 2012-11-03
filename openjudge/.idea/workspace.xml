@@ -58,7 +58,7 @@
       <file leaf-file-name="20121103052626_create_donors.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20121103052626_create_donors.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="7" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+            <state line="7" column="20" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -76,7 +76,7 @@
       <file leaf-file-name="20121103064659_create_gifts.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20121103064659_create_gifts.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="56" selection-start="305" selection-end="305" vertical-scroll-proportion="0.22277227">
+            <state line="3" column="28" selection-start="117" selection-end="117" vertical-scroll-proportion="0.074257426">
               <folding />
             </state>
           </provider>
@@ -97,12 +97,12 @@
         <option value="$PROJECT_DIR$/app/views/home/index.html.slim" />
         <option value="$PROJECT_DIR$/db/migrate/20121103082224_create_terms.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20121103053037_create_judges.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20121103052626_create_donors.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/gift.rb" />
         <option value="$PROJECT_DIR$/app/models/donor.rb" />
         <option value="$PROJECT_DIR$/app/models/judge.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20121103064659_create_gifts.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20121103052626_create_donors.rb" />
       </list>
     </option>
   </component>
@@ -667,7 +667,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20121103052626_create_donors.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+        <state line="7" column="20" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -681,7 +681,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20121103064659_create_gifts.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="56" selection-start="305" selection-end="305" vertical-scroll-proportion="0.22277227">
+        <state line="3" column="28" selection-start="117" selection-end="117" vertical-scroll-proportion="0.074257426">
           <folding />
         </state>
       </provider>

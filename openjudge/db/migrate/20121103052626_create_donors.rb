@@ -4,8 +4,8 @@ class CreateDonors < ActiveRecord::Migration
       t.string      :name
       t.string      :association
       t.string      :address_raw
-      t.float       :latitude
-      t.float       :longitude
+      t.decimal     :latitude
+      t.decimal     :longitude
       t.string      :image_uri
       t.timestamps
     end
