@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(:version => 20121103162610) do
 
-  create_table "donors", :force => true do |t|
+  create_table "donors", :primary_key => "donor_id", :force => true do |t|
     t.string   "name"
     t.string   "association"
     t.string   "address_raw"
@@ -24,21 +24,20 @@ ActiveRecord::Schema.define(:version => 20121103162610) do
     t.datetime "updated_at",  :null => false
   end
 
-  create_table "gifts", :force => true do |t|
+  create_table "gifts", :primary_key => "gift_id", :force => true do |t|
     t.string   "description"
     t.decimal  "value"
+    t.string   "type"
     t.date     "date_given"
     t.string   "address_raw"
     t.decimal  "latitude"
     t.decimal  "longitude"
     t.string   "image_uri"
-    t.integer  "donor_id"
-    t.integer  "judge_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
 
-  create_table "judges", :force => true do |t|
+  create_table "judges", :primary_key => "judge_id", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "position"

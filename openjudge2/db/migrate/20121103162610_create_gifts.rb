@@ -1,6 +1,7 @@
 class CreateGifts < ActiveRecord::Migration
   def change
-    create_table :gifts do |t|
+    create_table :gifts, {:primary_key => :gift_id} do |t|
+      t.integer     :id
       t.string      :description
       t.decimal     :value
       t.string      :type
