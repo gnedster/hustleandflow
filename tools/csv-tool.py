@@ -109,7 +109,8 @@ def process_gift_row(row, item):
                #last_name,
                #first_name,
                str(judge_id),
-               row[COLUMNS_GIFT['LINK' ]].lower()
+               row[COLUMNS_GIFT['LINK' ]].lower(),
+               row[COLUMNS_GIFT['ADDRESS']].lower()
             ]
 
     return [s.replace("--blank--", "").replace("--impossible--", "").strip().replace("  ", " ") for s in new_row]
@@ -149,6 +150,7 @@ def process_gift(gift_in):
         header = ["date",
                   'value',
                   'description',
+                  'address',
                   'donor_id',
                   'judge_id',
                  ]
@@ -159,9 +161,11 @@ def process_gift(gift_in):
         count = 0
         for row in reader:
             for i in range(1,4):
+                print row
+                print "DESC",  str(i), row[COLUMNS_GIFT['DESC' + str(i)]]
                 if row[COLUMNS_GIFT['DESC' + str(i)]].strip() != "--blank--":
                     new_row = process_gift_row(row, i)
-                    print new_row
+                    print "OK:", new_row
                     gift_out.write(','.join(new_row))
                     gift_out.write("\n")
         gift_out.close()
@@ -186,7 +190,7 @@ def main():
     donor_out.write("\n")
 
     for donor in donor_map:
-            print donor_map[donor]
+            #print donor_map[donor]
             donor_out.write(','.join(donor_map[donor]))
             donor_out.write("\n")
     donor_out.close()
