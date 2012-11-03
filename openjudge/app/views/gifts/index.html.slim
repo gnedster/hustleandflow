@@ -1,0 +1,17 @@
+h1 Listing gifts
+
+table
+  tr
+    th
+    th
+    th
+
+  - @gifts.each do |gift|
+    tr
+      td = link_to 'Show', gift
+      td = link_to 'Edit', edit_gift_path(gift)
+      td = link_to 'Destroy', gift, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Gift', new_gift_path
