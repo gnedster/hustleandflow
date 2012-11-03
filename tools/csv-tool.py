@@ -18,6 +18,7 @@ COLUMNS_GIFT = {
     'DATE3' : 19,
     'VAL3' : 21,
     'DESC3' : 23,
+    'LINK' : 25,
 }
 
 COLUMNS_JUDGE = {
@@ -107,7 +108,8 @@ def process_gift_row(row, item):
                str(donor_id),
                #last_name,
                #first_name,
-               str(judge_id)
+               str(judge_id),
+               row[COLUMNS_GIFT['LINK' ]].lower()
             ]
 
     return [s.replace("--blank--", "").replace("--impossible--", "").strip().replace("  ", " ") for s in new_row]
