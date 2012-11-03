@@ -49,9 +49,12 @@ def process_judge_row(row):
         last_name = m.group(1).lower().strip()
 
     judge_hash = hashlib.md5(last_name.join(first_name).encode("utf8")).hexdigest()
-    judge_map[judge_hash] = len(judge_map)
+    if (judge_hash not in judge_map):
+        judge_map[judge_hash] = len(judge_map)
     #print judge_hash, " : ", judge_map[judge_hash]
 
+    row = [re.sub(",", "", s) for s in row]
+    row = [re.sub("\n", "", s) for s in row]
     new_row = [ str(judge_map[judge_hash]),
                row[COLUMNS_JUDGE['LAST_NAME']].lower(),
                row[COLUMNS_JUDGE['FIRST_NAME']].lower(),
@@ -59,8 +62,9 @@ def process_judge_row(row):
                row[COLUMNS_JUDGE['AGENCY']].lower(),
                row[COLUMNS_JUDGE['DIVISION']].lower(),
                row[COLUMNS_JUDGE['POSITION']].lower(),
-               row[COLUMNS_JUDGE['AGENCY_MULTI']].lower(),
-               row[COLUMNS_JUDGE['POSITION_MULTI']].lower()]
+               #row[COLUMNS_JUDGE['AGENCY_MULTI']].lower(),
+               #row[COLUMNS_JUDGE['POSITION_MULTI']].lower()
+              ]
 
     return [s.replace("--blank--", "").replace("--impossible--", "") for s in new_row]
 
@@ -86,19 +90,23 @@ def process_gift_row(row, item):
     source = row[COLUMNS_GIFT['SOURCE']].lower()
     donor_hash = hashlib.md5(source.encode("utf8")).hexdigest()
     donor_id = -1
+    
+    source = re.sub(",", "", source)
+    business = re.sub(",", "", row[COLUMNS_GIFT['BUSINESS']].lower())
     if donor_hash in donor_map:
-        donor_id = donor_map[donor_hash]
+        donor_id = donor_map[donor_hash][0]
     else:
         donor_id = len(donor_map)
-        donor_map[donor_hash] = donor_id
+        donor_map[donor_hash] = [str(donor_id), source, business]
 
+    row = [re.sub(",", "", s) for s in row]
+    row = [re.sub("\n", "", s) for s in row]
     new_row = [row[COLUMNS_GIFT['DATE' + str(item)]].lower(),
                row[COLUMNS_GIFT['VAL' + str(item)]].lower(),
                row[COLUMNS_GIFT['DESC' + str(item)]].lower(),
                str(donor_id),
-               row[COLUMNS_GIFT['BUSINESS']].lower(),
-               last_name,
-               first_name,
+               #last_name,
+               #first_name,
                str(judge_id)
             ]
 
@@ -113,7 +121,7 @@ def process_cover(cover_in):
             if (count != 0):
                 new_row = process_judge_row(row)
                 print new_row
-                cover_out.write('| '.join(new_row))
+                cover_out.write(', '.join(new_row))
                 cover_out.write("\n")
             count = count + 1
         cover_out.close()
@@ -128,7 +136,7 @@ def process_gift(gift_in):
                 if row[COLUMNS_GIFT['DESC' + str(i)]].strip() != "--blank--":
                     new_row = process_gift_row(row, i)
                     print new_row
-                    gift_out.write('| '.join(new_row))
+                    gift_out.write(', '.join(new_row))
                     gift_out.write("\n")
         gift_out.close()
 
@@ -141,6 +149,13 @@ def main():
     g_donor_count = 0
     process_cover(sys.argv[1])
     process_gift(sys.argv[2])
+
+    donor_out = open("donor-fixed.csv", "w")
+    for donor in donor_map:
+            print donor_map[donor]
+            donor_out.write(', '.join(donor_map[donor]))
+            donor_out.write("\n")
+    donor_out.close()
 
 
 
