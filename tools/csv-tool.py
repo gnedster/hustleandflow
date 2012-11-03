@@ -66,7 +66,7 @@ def process_judge_row(row):
                #row[COLUMNS_JUDGE['POSITION_MULTI']].lower()
               ]
 
-    return [s.replace("--blank--", "").replace("--impossible--", "") for s in new_row]
+    return [s.replace("--blank--", "").replace("--impossible--", "").strip().replace("  ", " ") for s in new_row]
 
 def process_gift_row(row, item):
     form_name = row[COLUMNS_GIFT['FORM_NAME']]
@@ -91,8 +91,8 @@ def process_gift_row(row, item):
     donor_hash = hashlib.md5(source.encode("utf8")).hexdigest()
     donor_id = -1
     
-    source = re.sub(",", "", source)
-    business = re.sub(",", "", row[COLUMNS_GIFT['BUSINESS']].lower())
+    source = re.sub(",", "", source).strip()
+    business = re.sub(",", "", row[COLUMNS_GIFT['BUSINESS']].lower().strip())
     if donor_hash in donor_map:
         donor_id = donor_map[donor_hash][0]
     else:
@@ -110,12 +110,25 @@ def process_gift_row(row, item):
                str(judge_id)
             ]
 
-    return [s.replace("--blank--", "").replace("--impossible--", "") for s in new_row]
+    return [s.replace("--blank--", "").replace("--impossible--", "").strip().replace("  ", " ") for s in new_row]
 
 def process_cover(cover_in):
     with open(cover_in, 'rb') as csvfile:
         cover_out = open("cover-fixed.csv", "w")
         reader = csv.reader(csvfile, delimiter=',')
+
+        header = ["judge_id",
+                  "last_name",
+                  "first_name",
+                  "middle_name",
+                  "agency",
+                  "division",
+                  "position",
+                 ]
+        out_string = ','.join(header)
+        cover_out.write(out_string)
+        cover_out.write("\n")
+
         count = 0
         for row in reader:
             if (count != 0):
@@ -130,13 +143,24 @@ def process_gift(gift_in):
     with open(gift_in, 'rb') as csvfile:
         gift_out = open("gift-fixed.csv", "w")
         reader = csv.reader(csvfile, delimiter=',')
+
+        header = ["date",
+                  'value',
+                  'description',
+                  'donor_id',
+                  'judge_id',
+                 ]
+        out_string = ','.join(header)
+        gift_out.write(out_string)
+        gift_out.write("\n")
+
         count = 0
         for row in reader:
             for i in range(1,4):
                 if row[COLUMNS_GIFT['DESC' + str(i)]].strip() != "--blank--":
                     new_row = process_gift_row(row, i)
                     print new_row
-                    gift_out.write(', '.join(new_row))
+                    gift_out.write(','.join(new_row))
                     gift_out.write("\n")
         gift_out.close()
 
@@ -151,13 +175,19 @@ def main():
     process_gift(sys.argv[2])
 
     donor_out = open("donor-fixed.csv", "w")
+
+    header = ["donor_id",
+              "donor_name",
+              "donor_assoc",
+             ]
+    donor_out.write(','.join(header))
+    donor_out.write("\n")
+
     for donor in donor_map:
             print donor_map[donor]
-            donor_out.write(', '.join(donor_map[donor]))
+            donor_out.write(','.join(donor_map[donor]))
             donor_out.write("\n")
     donor_out.close()
-
-
 
 if __name__ == "__main__":
     main()
