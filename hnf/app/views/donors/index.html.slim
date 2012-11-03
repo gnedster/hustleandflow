@@ -1,0 +1,17 @@
+h1 Listing donors
+
+table
+  tr
+    th
+    th
+    th
+
+  - @donors.each do |donor|
+    tr
+      td = link_to 'Show', donor
+      td = link_to 'Edit', edit_donor_path(donor)
+      td = link_to 'Destroy', donor, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Donor', new_donor_path
