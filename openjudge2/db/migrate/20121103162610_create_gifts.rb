@@ -3,6 +3,7 @@ class CreateGifts < ActiveRecord::Migration
     create_table :gifts do |t|
       t.string      :description
       t.decimal     :value
+      t.string      :type
       t.date        :date_given
       t.string      :address_raw
       t.decimal     :latitude
