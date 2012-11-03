@@ -194,7 +194,7 @@ a:hover {
 }
 
 .img-circle {
-  border: 2px solid #999999;
+ 
   -webkit-border-radius: 500px;
      -moz-border-radius: 500px;
           border-radius: 500px;
