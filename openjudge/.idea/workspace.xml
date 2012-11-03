@@ -76,7 +76,7 @@
       <file leaf-file-name="20121103064659_create_gifts.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20121103064659_create_gifts.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="41" selection-start="274" selection-end="274" vertical-scroll-proportion="0.1980198">
+            <state line="9" column="56" selection-start="305" selection-end="305" vertical-scroll-proportion="0.22277227">
               <folding />
             </state>
           </provider>
@@ -681,7 +681,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20121103064659_create_gifts.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="41" selection-start="274" selection-end="274" vertical-scroll-proportion="0.1980198">
+        <state line="9" column="56" selection-start="305" selection-end="305" vertical-scroll-proportion="0.22277227">
           <folding />
         </state>
       </provider>

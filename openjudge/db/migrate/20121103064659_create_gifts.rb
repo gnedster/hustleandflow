@@ -8,10 +8,13 @@ class CreateGifts < ActiveRecord::Migration
       t.float       :latitude
       t.float       :longitude
       t.string      :image_uri
-      t.references  :donor
-      t.references  :judge
+      t.integer     :donor_id
+      t.integer     :judge_id
       t.timestamps
     end
+
+    add_foreign_key :gifts, :donor
+    add_foreign_key :gifts, :judge
   end
 
   def self.down
