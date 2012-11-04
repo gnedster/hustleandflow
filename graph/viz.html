@@ -14,7 +14,11 @@ var links=[{"source":169,"target":476,"value":175.0},{"source":95,"target":477,"
 var width =  900,
     height = 900;
 
-var color = d3.scale.ordinal().range(['#1f77b4', '#d62728'])
+var color = d3.scale.ordinal().range(['#1f77b4', '#d62728']);
+
+var maxDonation = d3.max(links.map(function(d) { return d.value; }))
+
+var linewidth = d3.scale.linear().range([1,10]).domain([1,maxDonation]);
 
 var force = d3.layout.force()
     .charge(-30)
@@ -35,7 +39,7 @@ var svg = d3.select("#chart").append("svg") //finds chart div, creates svg eleme
       .data(links)
     .enter().append("line")
       .attr("class", "link")
-      .style("stroke-width", function(d) { return 1; });
+      .style("stroke-width", function(d) { return linewidth(d.value); });
 
   var node = svg.selectAll("circle.node")
       .data(nodes)
