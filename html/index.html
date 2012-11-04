@@ -16,9 +16,9 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../openjudge2/app/assets/stylesheets/bootstrap-responsive.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="../openjudge2/app/assets/stylesheets/font-awesome.css">
     <style>
 
     /* GLOBAL STYLES
@@ -302,7 +302,16 @@ position: absolute;
     font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 1.25;
-    font-size: 34px;
+    font-size: 17px;
+    margin-bottom: 0px;)
+  }
+
+    .judgeheadline {
+    color: #26ADE4;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    font-size: 24px;
     margin-bottom: 0px;)
   }
 
@@ -361,15 +370,47 @@ position: absolute;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#"> <img src="img/openjudgelogo.png"> </a>
+          <a class="brand" href="index.html"> <img src="img/openjudgelogo.png"> </a>
 
           <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
 
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#abouttext" data-toggle="modal">About</a></li>
+              <li><a href="judges.html">Judges</a></li>
+              <li><a href="judge.html">Judge Profile</a></li>
+              
+
+
+                  <!-- about to trigger modal start -->
+  
+    <!-- Modal -->
+    <div id="abouttext" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">About Open Judge</h3>
+
+    </div>
+    <div class="modal-body">
+       <a href="index.html"> <img src="img/openjudgelogo2.png"> </a>
+       </br>
+    <p>
+   <h4>About:</h4> 
+Open Judge  CA is a project created as a part of <a href="http://codeforamerica.org/about/">Code For America’s </a> Data Deathmatch Hackaton (11/2-11/3). In an effort to make public data more accessible, this project was powered by data from Fair Political Practice Commission's collection of the 2011 Statements of Economic Interests filed by many California Judges in 2012. 
+
+<h4>Data disclaimer:</h4> 
+This data is based on digitization by <a href="http://captricity.com/datadeathmatch/">Capacity</a> of the 2011 Statements of Economic Interests filings by most California Judges in 2012 and provided by the <a href="http://www.fppc.ca.gov">Fair Political Practices Commission</a> in an effort to increase goverment transperency. This data may be subject to errors and gaps and should not be taken as a comprehensive data-set. For more information on the data, visit <a href="http://captricity.com/datadeathmatch/">http://captricity.com/datadeathmatch</a> or <a href="http://www.fppc.ca.gov">http://www.fppc.ca.gov </a>
+</p>
+    </div>
+    <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    
+    </div>
+    </div>
+
+     <!-- about to trigger modal end -->
+
 
 
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
@@ -413,10 +454,14 @@ position: absolute;
         <div class="row">
     <div class="span12 headlinecopy">
 <div class="infoheadline">
-    Open Judge Provides Information About Judges
+    Open Judge CA -- an effort to bring great usability to public data on gifts disclosed by Judges in California (2011).</br></br>
   </div>
+
     <div class="row tablestboxes">
+     
+      
     <div class="span5"> 
+      <div class="judgeheadline">Top 10 Gift Recievers</div>
         <table class="table table-hover">
   
     
@@ -457,13 +502,20 @@ position: absolute;
         </tr>
 
       </table>
+
+<div class="span4">
+  Also:
+  <a href="#"><img src="img/available_on_itunes2.png"></a>
+
+
+</div>
       </div>
 
     <div class="span5">
 
 
       <div class="heatmap1">
-        <img src="img/donarmap.png" width="360px">
+        <img src="img/cadatawordie.png" width="">
         
       </div>
 
@@ -474,7 +526,7 @@ position: absolute;
     </div>
 
 <!-- end tables -->
-
+<!-- end tables 
 
  <hr class="featurette-divider">
 
@@ -504,8 +556,7 @@ position: absolute;
 
 
 </div>
-</div>
-
+</div>-->
 
     
 
@@ -526,7 +577,7 @@ position: absolute;
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="span3 teamb">
-          <img class="img-circle" src="http://placehold.it/140x140">
+          <img class="img-circle" src="img/cait.jpg">
           <h4>Cathryn Posey</h4>
           <ul class="unstyled">
             <li><i class="icon-user icon-large"></i>Brand and design concepts </li>
@@ -536,7 +587,7 @@ position: absolute;
         </div><!-- /.span3 -->
 
         <div class="span3 teamb">
-          <img class="img-circle" src="http://placehold.it/140x140">
+          <img class="img-circle" src="img/ed.jpg">
           <h4>Edward Ng</h4>
           <ul class="unstyled">
             <li><i class="icon-user icon-large"></i>Front end Developer </li>
@@ -546,7 +597,7 @@ position: absolute;
         </div><!-- /.span3 -->
 
         <div class="span3 teamb">
-          <img class="img-circle" src="http://placehold.it/140x140">
+          <img class="img-circle" src="img/kamil.jpg">
           <h4>Kamil Pilch</h4>
           <ul class="unstyled">
             <li><i class="icon-user icon-large"></i> Hacker</li>
@@ -556,7 +607,7 @@ position: absolute;
         </div><!-- /.span3 -->
 
         <div class="span3 teamb">
-          <img class="img-circle" src="http://placehold.it/140x140">
+          <img class="img-circle" src="img/kaming.jpg">
           <h4>Kaming Li</h4>
           <ul class="unstyled">
             <li><i class="icon-user icon-large"></i> iOS Developer</li>
@@ -566,7 +617,7 @@ position: absolute;
         </div><!-- /.span3 -->
 
         <div class="span3 teamb">
-          <img class="img-circle" src="http://placehold.it/140x140">
+          <img class="img-circle" src="img/renee.jpg">
           <h4>Renee DiResta</h4>
           <ul class="unstyled">
             <li><i class="icon-user icon-large"></i> Hacker</li>
@@ -576,7 +627,7 @@ position: absolute;
         </div><!-- /.span3 -->
         
         <div class="span3 teamb">
-          <img class="img-circle" src="http://placehold.it/140x140">
+          <img class="img-circle" src="img/wayne.jpg">
           <h4>Wayne Suton</h4>
           <ul class="unstyled">
             <li><i class="icon-user icon-large"></i> UI/UX Designer</li>
@@ -584,6 +635,7 @@ position: absolute;
           </ul></div>
          <!-- /.span3 -->
 
+ <!-- /.adria 
         <div class="span3 teamb">
           <img class="img-circle" src="http://placehold.it/140x140">
           <h4>Adria Richards</h4>
@@ -591,6 +643,7 @@ position: absolute;
             <li><i class="icon-user icon-large"></i> Hacker</li>
              <li><i class="icon-twitter icon-large"></i> <a href="http://twitter.com/AdriaRichards"> @AdriaRichards</li></a>
           </ul>
+          ->
          
 </div><!-- /.span3 -->
         
@@ -606,9 +659,19 @@ position: absolute;
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p class="pull-right"><a href="#">Back to top</a>
+        </p>
+       
+        
 
-        <p><a href="http://codeforamerica.org"><img src="img/cfalogo.png"></a><br> A #datadeathmatch for #opendata #gov20 #hackathon project &middot; <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+        <p><a href="http://codeforamerica.org"><img src="img/cfalogo.png"></a><br>Code for America helps governments work better for everyone with the people and the power of the web. This data is based on digitization by Capacity (insert http://captricity.com/datadeathmatch/) of the Statements of 2011 Economic Interests filings by some California Judges and provided by the Fair Political Practices Commission - this data may be subject to errors and gaps and should not be taken as a comprehensive data-set.  &middot; <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+
+
+
+<<<<<<< Updated upstream
+=======
+        <p><a href="http://codeforamerica.org"><img src="images/cfalogo.png"></a><br> A #datadeathmatch for #opendata #gov20 #hackathon project &middot; <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+>>>>>>> Stashed changes
         <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style ">
 <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
