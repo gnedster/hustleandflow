@@ -16,9 +16,9 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="../openjudge2/app/assets/stylesheets/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../openjudge2/app/assets/stylesheets/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <style>
 
     /* GLOBAL STYLES
@@ -368,14 +368,15 @@ position: absolute;
 
           <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
 
+         <!-- navagation start -->
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="#">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="#abouttext" data-toggle="modal">About</a></li>
               <li><a href="judges.html">Judges</a></li>
               <li><a href="judge.html">Judge Profile</a></li>
               
-
+<!-- navagation end -->
 
                   <!-- about to trigger modal start -->
   
@@ -562,17 +563,35 @@ This data is based on digitization by <a href="http://captricity.com/datadeathma
 
       <!-- /END THE FEATURETTES -->
 
-
-      <!-- FOOTER -->
+ <!-- FOOTER Start -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a>
         </p>
+       
         
 
-        <p><a href="http://codeforamerica.org"><img src="img/cfalogo.png"></a><br> Code for America helps governments work better for everyone with the people and the power of the web.
-        This data is based on digitization by Capacity (insert http://captricity.com/datadeathmatch/) of the Statements of 2011 Economic Interests filings by some California Judges and provided by the Fair Political Practices Commission - this data may be subject to errors and gaps and should not be taken as a comprehensive data-set. <!--A #datadeathmatch for #opendata #gov20 #hackathon project--> &middot; <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+              <p>&copy; 2012 Open Judge &middot;<!--<a href="http://codeforamerica.org"><img src="img/cfalogo.png"></a>--> &middot;  <a href="#privacypolicy" data-toggle="modal">Privacy Policy</a> <!-- &middot; <a href="#">Terms</a> -->
 
+ <!-- Modal -->
+    <div id="privacypolicy" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Privacy Policy</h3>
 
+    </div>
+    <div class="modal-body">
+<h4>Data disclaimer:</h4> 
+<p>
+This data is based on digitization by <a href="http://captricity.com/datadeathmatch/">Capacity</a> of the 2011 Statements of Economic Interests filings by most California Judges in 2012 and provided by the <a href="http://www.fppc.ca.gov">Fair Political Practices Commission</a> in an effort to increase goverment transperency. This data may be subject to errors and gaps and should not be taken as a comprehensive data-set. For more information on the data, visit <a href="http://captricity.com/datadeathmatch/">http://captricity.com/datadeathmatch</a> or <a href="http://www.fppc.ca.gov">http://www.fppc.ca.gov </a>
+</p>
+    </div>
+    <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    
+    </div>
+    </div>
+
+     <!-- about to trigger modal end -->
 
 
         <!-- AddThis Button BEGIN -->
@@ -586,6 +605,10 @@ This data is based on digitization by <a href="http://captricity.com/datadeathma
 <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=wayne12"></script>
 <!-- AddThis Button END --></p>
       </footer>
+
+
+<!-- FOOTER end -->
+
 
     </div><!-- /.container -->
 
