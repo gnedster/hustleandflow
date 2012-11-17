@@ -1,6 +1,6 @@
 class CreateGifts < ActiveRecord::Migration
   def change
-    create_table :gifts, {:primary_key => :gift_id} do |t|
+    create_table :gifts, {:primary_key => :id} do |t|
       t.integer     :id
       t.string      :description
       t.decimal     :value
@@ -15,7 +15,7 @@ class CreateGifts < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_foreign_key :gifts, :donor
-    add_foreign_key :gifts, :judge
+    add_foreign_key :gifts, :donors
+    add_foreign_key :gifts, :judges
   end
 end

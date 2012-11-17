@@ -7,6 +7,8 @@ gem 'tilt'
 gem 'fusion_tables'
 gem 'google_visualr'
 gem 'neography'
+gem 'html5shiv-rails'
+gem 'pg'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

@@ -13,9 +13,9 @@
 
 ActiveRecord::Schema.define(:version => 20121103162610) do
 
-  create_table "donors", :primary_key => "donor_id", :force => true do |t|
+  create_table "donors", :force => true do |t|
     t.string   "name"
-    t.string   "association"
+    t.string   "affiliation"
     t.string   "address_raw"
     t.decimal  "latitude"
     t.decimal  "longitude"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20121103162610) do
     t.datetime "updated_at",  :null => false
   end
 
-  create_table "gifts", :primary_key => "gift_id", :force => true do |t|
+  create_table "gifts", :force => true do |t|
     t.string   "description"
     t.decimal  "value"
     t.string   "type"
@@ -33,18 +33,25 @@ ActiveRecord::Schema.define(:version => 20121103162610) do
     t.decimal  "latitude"
     t.decimal  "longitude"
     t.string   "image_uri"
+    t.integer  "donor_id"
+    t.integer  "judge_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
 
-  create_table "judges", :primary_key => "judge_id", :force => true do |t|
+  create_table "judges", :force => true do |t|
     t.string   "first_name"
+    t.string   "middle_name"
     t.string   "last_name"
+    t.string   "agency"
     t.string   "position"
     t.string   "division"
     t.string   "image_uri"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
+
+  add_foreign_key "gifts", "donors", :name => "gifts_donor_id_fk"
+  add_foreign_key "gifts", "judges", :name => "gifts_judge_id_fk"
 
 end
