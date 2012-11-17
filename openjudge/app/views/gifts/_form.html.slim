@@ -1,9 +1,0 @@
-= form_for @gift do |f|
-  - if @gift.errors.any?
-    #error_explanation
-      h2 = "#{pluralize(@gift.errors.count, "error")} prohibited this gift from being saved:"
-      ul
-        - @gift.errors.full_messages.each do |message|
-          li = message
-
-  .actions = f.submit 'Save'
