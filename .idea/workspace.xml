@@ -2,393 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b0a3a52-7815-4659-8e65-f73fefba4004" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/.idea/.generators" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/.idea/.rakeTasks" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/.idea/judge.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/controllers/application_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/controllers/donors_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/controllers/home_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/controllers/judges_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/helpers/application_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/helpers/donors_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/helpers/home_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/helpers/judges_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/models/donor.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/models/judge.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/views/donors/_form.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/views/donors/edit.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/views/donors/index.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/views/donors/new.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/views/donors/show.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/views/home/index.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/views/judges/_form.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/views/judges/edit.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/views/judges/index.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/views/judges/new.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/views/judges/show.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/app/views/layouts/application.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config.ru" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/application.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/boot.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/database.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/environment.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/environments/development.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/environments/production.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/environments/test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/initializers/backtrace_silencers.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/initializers/inflections.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/initializers/mime_types.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/initializers/secret_token.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/initializers/session_store.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/locales/en.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/config/routes.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/db/migrate/20121103052626_create_donors.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/db/migrate/20121103053037_create_judges.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/db/schema.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/db/seeds.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/doc/README_FOR_APP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/judge.ipr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/judge.iws" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/lib/tasks/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/422.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/500.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/images/rails.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/javascripts/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/javascripts/controls.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/javascripts/dragdrop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/javascripts/effects.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/javascripts/prototype.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/javascripts/rails.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/stylesheets/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/public/stylesheets/scaffold.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/script/rails" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/test/fixtures/donors.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/test/fixtures/judges.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/test/functional/donors_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/test/functional/home_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/test/functional/judges_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/test/performance/browsing_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/test/test_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/test/unit/donor_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/test/unit/helpers/donors_helper_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/test/unit/helpers/home_helper_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/test/unit/helpers/judges_helper_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/test/unit/judge_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/vendor/plugins/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/vendor/plugins/Rename/MIT-LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/vendor/plugins/Rename/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/vendor/plugins/Rename/Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/vendor/plugins/Rename/init.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/vendor/plugins/Rename/install.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/vendor/plugins/Rename/lib/generators/rename_to/USAGE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/vendor/plugins/Rename/lib/generators/rename_to/rename_to_generator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/vendor/plugins/Rename/lib/rename.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/vendor/plugins/Rename/test/rename_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/vendor/plugins/Rename/test/test_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hnf/vendor/plugins/Rename/uninstall.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/judge/.idea/judge.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/judge/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/judge/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/.idea/.generators" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/.idea/.rakeTasks" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/.idea/judge.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/assets/javascripts/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/assets/javascripts/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/assets/stylesheets/application.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/controllers/application_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/controllers/donors_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/controllers/gifts_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/controllers/home_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/controllers/judges_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/helpers/application_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/helpers/donors_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/helpers/gifts_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/helpers/home_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/helpers/judges_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/models/donor.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/models/gift.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/models/judge.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/donors/_form.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/donors/edit.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/donors/index.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/donors/new.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/donors/show.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/gifts/_form.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/gifts/edit.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/gifts/index.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/gifts/new.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/gifts/show.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/home/index.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/judges/_form.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/judges/edit.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/judges/index.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/judges/new.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/judges/show.html.slim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/app/views/layouts/application.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config.ru" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/application.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/boot.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/database.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/environment.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/environments/development.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/environments/production.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/environments/test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/initializers/backtrace_silencers.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/initializers/inflections.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/initializers/mime_types.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/initializers/secret_token.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/initializers/session_store.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/locales/en.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/config/routes.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/db/migrate/20121103052626_create_donors.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/db/migrate/20121103053037_create_judges.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/db/migrate/20121103064659_create_gifts.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/db/schema.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/db/seeds.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/doc/README_FOR_APP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/judge.ipr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/judge.iws" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/lib/tasks/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/422.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/500.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/images/rails.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/javascripts/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/javascripts/controls.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/javascripts/dragdrop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/javascripts/effects.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/javascripts/prototype.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/javascripts/rails.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/stylesheets/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/public/stylesheets/scaffold.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/script/rails" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/fixtures/donors.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/fixtures/gifts.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/fixtures/judges.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/functional/donors_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/functional/gifts_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/functional/home_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/functional/judges_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/performance/browsing_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/test_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/unit/donor_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/unit/gift_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/unit/helpers/donors_helper_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/unit/helpers/gifts_helper_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/unit/helpers/home_helper_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/unit/helpers/judges_helper_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/test/unit/judge_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/vendor/plugins/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/vendor/plugins/Rename/MIT-LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/vendor/plugins/Rename/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/vendor/plugins/Rename/Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/vendor/plugins/Rename/init.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/vendor/plugins/Rename/install.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/vendor/plugins/Rename/lib/generators/rename_to/USAGE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/vendor/plugins/Rename/lib/generators/rename_to/rename_to_generator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/vendor/plugins/Rename/lib/rename.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/vendor/plugins/Rename/test/rename_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/vendor/plugins/Rename/test/test_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge/vendor/plugins/Rename/uninstall.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/.idea/.generators" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/Gemfile.orig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/README.rdoc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/.idea/app.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/fonts/FontAwesome.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/CfA_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/apple-touch-icon-114-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/apple-touch-icon-144-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/apple-touch-icon-57-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/available_on_itunes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/available_on_itunes2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/bgnoise.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/bootstrap-mdo-sfmoma-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/bootstrap-mdo-sfmoma-02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/bootstrap-mdo-sfmoma-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/bs-docs-bootstrap-features.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/bs-docs-masthead-pattern.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/bs-docs-responsive-illustrations.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/bs-docs-twitter-github.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/cfalogo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/donarmap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/example-sites/8020select.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/example-sites/adoptahydrant.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/example-sites/breakingnews.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/example-sites/fleetio.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/example-sites/gathercontent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/example-sites/jshint.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/example-sites/kippt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/example-sites/soundready.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/bootstrap-example-carousel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/bootstrap-example-fluid.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/bootstrap-example-hero.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/bootstrap-example-marketing-narrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/bootstrap-example-signin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/bootstrap-example-starter.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/bootstrap-example-sticky-footer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/browser-icon-chrome.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/browser-icon-firefox.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/browser-icon-safari.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/slide-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/slide-02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/examples/slide-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/gasheatmap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/grid-baseline-20px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/less-logo-large.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/openjudgelogo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/rails.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/responsive-illustrations.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/retina_dust.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/images/retina_dust_@2X.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/javascripts/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/javascripts/donors.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/javascripts/gmaps4rails/gmaps4rails.base.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/javascripts/gmaps4rails/gmaps4rails.bing.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/javascripts/gmaps4rails/gmaps4rails.googlemaps.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/javascripts/gmaps4rails/gmaps4rails.mapquest.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/javascripts/gmaps4rails/gmaps4rails.openlayers.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/javascripts/home.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/javascripts/judges.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/stylesheets/application.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/stylesheets/bootstrap-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/stylesheets/donors.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/stylesheets/font-awesome-ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/stylesheets/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/stylesheets/gmaps4rails.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/stylesheets/home.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/stylesheets/judges.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/assets/stylesheets/scaffolds.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/controllers/application_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/controllers/donors_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/controllers/home_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/controllers/judges_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/helpers/application_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/helpers/donors_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/helpers/home_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/helpers/judges_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/mailers/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/models/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/models/donor.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/models/gift.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/models/judge.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/views/donors/_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/views/donors/edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/views/donors/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/views/donors/new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/views/donors/show.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/views/home/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/views/judges/_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/views/judges/edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/views/judges/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/views/judges/new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/views/judges/show.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/app/views/layouts/application.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config.ru" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/application.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/boot.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/database.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/environment.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/environments/development.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/environments/production.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/environments/test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/initializers/backtrace_silencers.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/initializers/inflections.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/initializers/mime_types.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/initializers/secret_token.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/initializers/session_store.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/initializers/wrap_parameters.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/locales/en.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/config/routes.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/db/migrate/20121103162527_create_judges.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/db/migrate/20121103162555_create_donors.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/db/migrate/20121103162610_create_gifts.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/db/schema.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/db/seeds.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/doc/README_FOR_APP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/lib/assets/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/lib/tasks/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/lib/tasks/import.rake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/log/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/public/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/public/422.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/public/500.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/public/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/script/rails" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/fixtures/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/fixtures/donors.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/fixtures/gifts.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/fixtures/judges.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/functional/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/functional/donors_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/functional/home_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/functional/judges_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/integration/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/performance/browsing_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/test_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/unit/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/unit/donor_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/unit/gift_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/unit/helpers/donors_helper_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/unit/helpers/home_helper_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/unit/helpers/judges_helper_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/test/unit/judge_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/vendor/assets/javascripts/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/vendor/assets/stylesheets/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/openjudge2/vendor/plugins/.gitkeep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openjudge2/.idea/openjudge2.iml" afterPath="$PROJECT_DIR$/openjudge2/.idea/openjudge2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openjudge2/.idea/misc.xml" afterPath="$PROJECT_DIR$/openjudge2/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openjudge2/.idea/vcs.xml" afterPath="$PROJECT_DIR$/openjudge2/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openjudge2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/openjudge2/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/hustleandflow.iml" afterPath="$PROJECT_DIR$/.idea/hustleandflow.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="hustleandflow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -405,8 +20,33 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.23917995">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Gemfile" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="63" />
@@ -626,13 +266,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="22" width="1617" height="1028" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -698,6 +338,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.23917995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
 
