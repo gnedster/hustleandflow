@@ -1,24 +1,141 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Openjudge2</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag "html5shiv-printshiv" %>
-  <%= csrf_meta_tags %>
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic" />
+    <head>
+        <title>Openjudge2</title>
+        <%= stylesheet_link_tag "application", :media => "all" %>
+        <%= javascript_include_tag "application" %>
+        <%= javascript_include_tag "html5shiv-printshiv" %>
+        <%= csrf_meta_tags %>
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic"/>
 
-  <!-- Fav and touch icons -->
-  <link rel="shortcut icon" href="ico/favicon.ico">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <!-- Fav and touch icons -->
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 
-</head>
-<body>
+    </head>
+    <body>
+    <!-- NAVBAR
+    ================================================== -->
+    <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+    <div class="container navbar-wrapper">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#"> <img src="assets/openjudgelogo.png"> </a>
 
-<%= yield %>
+                <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
 
-</body>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li>
+                            <% link_to "Home", home_index_path %></li>
+                        <li>
+                            <% link_to "Judges", judges_path %></li>
+                        <li><a href="#abouttext" data-toggle="modal">About</a></li>
+                    </ul>
+
+                    <!-- start search box -->
+                    <div class="searchboxright">
+                        <form class="pull-right search">
+                            <input type="text" class="search-queryindex" placeholder="Search">
+                        </form>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- /.navbar-inner -->
+            </div>
+            <!-- /.navbar -->
+
+        </div>
+        <!-- /.container -->
+    </div>
+
+    <div id="abouttext" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">About Open Judge</h3>
+        </div>
+        <div class="modal-body">
+            <a href="index.html"> <img src="assets/openjudgelogo2.png"> </a>
+            </br>
+            <h4>About:</h4>
+            OpenJudge CA is a project created as a part of
+            <a href="http://codeforamerica.org/about/">Code For America’s </a> Data Deathmatch Hackaton (11/2-11/3). In an
+            effort to make public data more accessible, this project was powered by data from Fair Political Practice
+            Commission's collection of the 2011 Statements of Economic Interests filed by many California Judges in 2012.
+
+            <h4>Data disclaimer:</h4>
+            This data is based on digitization by <a href="http://captricity.com/datadeathmatch/">Capacity</a> of the 2011
+            Statements of Economic Interests filings by most California Judges in 2012 and provided by the
+            <a href="http://www.fppc.ca.gov">Fair Political Practices Commission</a> in an effort to increase goverment
+            transperency. This data may be subject to errors and gaps and should not be taken as a comprehensive data-set.
+            For more information on the data, visit
+            <a href="http://captricity.com/datadeathmatch/">http://captricity.com/datadeathmatch</a> or
+            <a href="http://www.fppc.ca.gov">http://www.fppc.ca.gov </a>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+    </div>
+
+    <%= yield %>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+
+        <p>OpenJudge &copy; 2012 &middot; <a href="http://codeforamerica.org"><img src="assets/cfalogo.png"></a> &middot;
+            <a href="#privacypolicy" data-toggle="modal">Privacy Policy</a> <!-- &middot; <a href="#">Terms</a> -->
+
+            <!-- Modal -->
+
+        <div id="privacypolicy" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Privacy Policy</h3>
+
+            </div>
+            <div class="modal-body">
+                <h4>Data disclaimer:</h4>
+
+                <p>
+                    This data is based on digitization by <a href="http://captricity.com/datadeathmatch/">Capacity</a> of
+                    the 2011 Statements of Economic Interests filings by most California Judges in 2012 and provided by the
+                    <a href="http://www.fppc.ca.gov">Fair Political Practices Commission</a> in an effort to increase
+                    government transparency. This data may be subject to errors and gaps and should not be taken as a
+                    comprehensive data-set. For more information on the data, visit
+                    <a href="http://captricity.com/datadeathmatch/">http://captricity.com/datadeathmatch</a> or
+                    <a href="http://www.fppc.ca.gov">http://www.fppc.ca.gov </a>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+            </div>
+        </div>
+
+        <!-- about to trigger modal end -->
+
+
+        <!-- AddThis Button BEGIN -->
+        <div class="addthis_toolbox addthis_default_style ">
+            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+            <a class="addthis_button_tweet"></a>
+            <a class="addthis_button_pinterest_pinit"></a>
+            <a class="addthis_counter addthis_pill_style"></a>
+        </div>
+        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+        <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=wayne12"></script>
+        <!-- AddThis Button END -->
+    </footer>
+
+    </body>
 </html>
