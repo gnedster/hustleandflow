@@ -2,9 +2,11 @@ Openjudge2::Application.routes.draw do
   get "home/index"
 
   root :to => "home#index"
-  resources :donors
+  resources :donors, :only => [:index, :show]
 
-  resources :judges
+  resources :judges, :only => [:index, :show]
+
+  resources :gifts, :only => [:index, :show]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

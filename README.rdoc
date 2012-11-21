@@ -4,6 +4,7 @@ In the spirit of the Open Gov movement,  OpenJudge is a resource that provides C
 better access to the publicly available data on gifts disclosure by judges in the State of California.
 This resource provides a data visualization dashboard view of top gift receivers, gifts and donations
 as well as a directory that itemizes all gifts by judge and all donors by judges they have donated to.
+
 The companion app provides tweetable breakout of individual gifts that allows citizens to share out the
 data as well as the opportunity to see which gifts are gathering the strongest interest on social media platforms.
 The premise of this resource aligns with the mission of the data providers (Capacity and the Fair Political
