@@ -9,6 +9,7 @@ gem 'google_visualr'
 gem 'neography'
 gem 'html5shiv-rails'
 gem 'pg'
+gem 'rabl'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

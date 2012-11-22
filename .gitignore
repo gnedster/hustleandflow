@@ -1,3 +1,6 @@
-tmp*
+tmp/*
+log/*
 cassandra.pid
 .DS_Store
+*.pyc
+*.lock
