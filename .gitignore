@@ -3,7 +3,6 @@ log/*
 cassandra.pid
 .DS_Store
 *.pyc
-*.lock
 *.idea/
 *.orig
 
