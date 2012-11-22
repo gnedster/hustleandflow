@@ -7,7 +7,7 @@ Openjudge2::Application.routes.draw do
   resources :judges, :only => [:index, :show]
 
   resources :gifts, :only => [:index, :show] do
-      get 'app', :on => :collection
+      get 'mobile', :on => :collection
   end
 
 

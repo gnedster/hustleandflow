@@ -1,9 +1,6 @@
 <!-- tables start
 ================================================== -->
 
-<!-- tables start
-================================================== -->
-
 <div class="container tablesb">
     <div class="row">
         <div class="span12 headlinecopy">
@@ -24,8 +21,8 @@
                             <tbody>
                             <% for @judge in @top_judges %>
                                 <tr class="success">
-                                    <td><%= link_to "#{@judge.full_name.titlecase}", judge_path(@judge.id) %></td>
-                                    <td><%= @judge.total_value %></td>
+                                    <td><%= link_to "#{@judge.full_name}", judge_path(@judge.id) %></td>
+                                    <td><%= number_to_currency @judge.total_value %></td>
                                 </tr>
                             <% end %>
                             </tbody>

@@ -10,13 +10,13 @@ class GiftsController < ApplicationController
     end
   end
 
-  # GET /gifts/app
-  # GET /gifts/app.json
-  def app
+  # GET /gifts/mobile
+  # GET /gifts/mobile.json
+  def mobile 
     @gifts = Gift.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # mobile.html.erb
       format.json
     end
   end
