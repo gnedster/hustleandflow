@@ -2,7 +2,8 @@ import csv
 import sys
 import re
 import hashlib
-import jd_csv_common as jd
+
+judge_name_regex = 'R_([A-Za-z-._]+)-page'
 
 COLUMNS_GIFT = {
     'FORM_NAME' : 0,
@@ -39,17 +40,37 @@ judge_map = {}
 # map donor hash to donor id
 donor_map = {}
 
+def sanitize_date(in_date):
+    #print "XXX: ", in_date.strip()
+    if in_date.strip() == "--blank--":
+        return "??/??/??"
+
+    m = re.search("[0-9]+ [0-9]+ [0-9]+", in_date)
+    if (m):
+        in_date = re.sub(" ", "/", in_date)
+
+    m = re.search("[0-9]+/[0-9]+/[0-9]+", in_date)
+    if (m):
+        return in_date
+
+    return "??/??/??"
+
+
+def sanitize_value(in_value):
+    m = re.search("\$?([0-9]+[.]?[0-9]+)", in_value)
+    if m:
+        return m.group(1)
+    return "??"
+
 def process_judge_row(row):
     form_name = row[COLUMNS_JUDGE['FORM_NAME']]
-    m = re.search(jd.judge_name_regex, form_name)
-    first_name = ""
-    last_name = ""
+    m = re.search(judge_name_regex, form_name)
+    page_name = ""
 
     if (m):
-        first_name = m.group(2).lower().strip()
-        last_name = m.group(1).lower().strip()
+        page_name = m.group(1).lower().strip()
 
-    judge_hash = hashlib.md5(last_name.join(first_name).encode("utf8")).hexdigest()
+    judge_hash = hashlib.md5(page_name.encode("utf8")).hexdigest()
     if (judge_hash not in judge_map):
         judge_map[judge_hash] = len(judge_map)
     #print judge_hash, " : ", judge_map[judge_hash]
@@ -71,22 +92,20 @@ def process_judge_row(row):
 
 def process_gift_row(row, item):
     form_name = row[COLUMNS_GIFT['FORM_NAME']]
-    first_name = ""
-    last_name = ""
-    m = re.search(jd.judge_name_regex, form_name)
+    page_name = ""
+    m = re.search(judge_name_regex, form_name)
 
     if (m):
-        first_name = m.group(2).lower().strip()
-        last_name = m.group(1).lower().strip()
+        page_name = m.group(1).lower().strip()
 
-    judge_hash = hashlib.md5(last_name.join(first_name).encode("utf8")).hexdigest()
+    judge_hash = hashlib.md5(page_name.encode("utf8")).hexdigest()
     #print "GIFT", judge_hash, " : ", judge_map[judge_hash]
 
     judge_id = -1
     if (judge_hash in judge_map):
         judge_id = judge_map[judge_hash]
     else:
-        print "ERROR: Unknown judge: ", last_name, ",", first_name
+        print "ERROR: Unknown judge: ", page_name
     
     source = row[COLUMNS_GIFT['SOURCE']].lower()
     donor_hash = hashlib.md5(source.encode("utf8")).hexdigest()
@@ -102,8 +121,8 @@ def process_gift_row(row, item):
 
     row = [re.sub(",", "", s) for s in row]
     row = [re.sub("\n", "", s) for s in row]
-    new_row = [row[COLUMNS_GIFT['DATE' + str(item)]].lower(),
-               row[COLUMNS_GIFT['VAL' + str(item)]].lower(),
+    new_row = [sanitize_date(row[COLUMNS_GIFT['DATE' + str(item)]].lower()),
+               sanitize_value(row[COLUMNS_GIFT['VAL' + str(item)]].lower()),
                row[COLUMNS_GIFT['DESC' + str(item)]].lower(),
                str(donor_id),
                #last_name,
