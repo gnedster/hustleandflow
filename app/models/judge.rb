@@ -10,9 +10,4 @@ class Judge < ActiveRecord::Base
   def total_value
     self.gifts.inject(0){|sum, x| sum + x.value }.to_s
   end
-
-  def gifts
-    Gift.where(:judge_id => self.id)
-  end
-
 end
