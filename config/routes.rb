@@ -6,7 +6,10 @@ Openjudge2::Application.routes.draw do
 
   resources :judges, :only => [:index, :show]
 
-  resources :gifts, :only => [:index, :show]
+  resources :gifts, :only => [:index, :show] do
+      get 'app', :on => :collection
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
