@@ -10,6 +10,12 @@ gem 'neography'
 gem 'html5shiv-rails'
 gem 'pg'
 gem 'rabl'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'rails3-jquery-autocomplete'
+
+gem 'd3_rails'
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -20,16 +26,12 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'bootstrap-sass'
-  gem 'd3_rails'
-  gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

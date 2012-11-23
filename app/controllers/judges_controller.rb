@@ -1,6 +1,6 @@
-require 'neography'
-
 class JudgesController < ApplicationController
+  autocomplete :judge, :full_name
+
   # GET /judges
   # GET /judges.json
   def index

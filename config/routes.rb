@@ -1,10 +1,10 @@
 Openjudge2::Application.routes.draw do
-  get "home/index"
-
   root :to => "home#index"
   resources :donors, :only => [:index, :show]
 
-  resources :judges, :only => [:index, :show]
+  resources :judges, :only => [:index, :show] do
+    get :autocomplete_judge_full_name, :on => :collection
+  end
 
   resources :gifts, :only => [:index, :show] do
       get 'mobile', :on => :collection

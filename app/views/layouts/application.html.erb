@@ -3,7 +3,7 @@
     <head>
         <title>OpenJudge</title>
         <%= stylesheet_link_tag "application", :media => "all" %>
-        <%= javascript_include_tag "application" %>
+        <%= javascript_include_tag "application", "html5shiv-printshiv", "autocomplete-rails"  %>
         <%= javascript_include_tag "html5shiv-printshiv" %>
         <%= csrf_meta_tags %>
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic"/>
@@ -44,9 +44,9 @@
 
                     <!-- start search box -->
                     <div class="searchboxright">
-                        <form class="pull-right search">
-                            <input type="text" class="search-queryindex" placeholder="Search">
-                        </form>
+                        <%= form_for :judge, :url => judge_path, :method => :get do |f| %>
+                            <%=  f.autocomplete_field :full_name, autocomplete_judge_full_name_judges_path %>
+                        <% end %>
                     </div>
                     <!--/.nav-collapse -->
                 </div>
@@ -67,15 +67,15 @@
             </br>
             <h4>About:</h4>
             OpenJudge CA is a project created as a part of
-            <a href="http://codeforamerica.org/about/">Code For America’s </a> Data Deathmatch Hackaton (11/2-11/3). In an
+            <a href="http://codeforamerica.org/about/">Code For America’s </a> Data Deathmatch Hackathon (11/2/12-11/3/12). In an
             effort to make public data more accessible, this project was powered by data from Fair Political Practice
             Commission's collection of the 2011 Statements of Economic Interests filed by many California Judges in 2012.
 
             <h4>Data disclaimer:</h4>
-            This data is based on digitization by <a href="http://captricity.com/datadeathmatch/">Capacity</a> of the 2011
+            This data is based on digitization by <a href="http://captricity.com/datadeathmatch/">Captricity</a> of the 2011
             Statements of Economic Interests filings by most California Judges in 2012 and provided by the
-            <a href="http://www.fppc.ca.gov">Fair Political Practices Commission</a> in an effort to increase goverment
-            transperency. This data may be subject to errors and gaps and should not be taken as a comprehensive data-set.
+            <a href="http://www.fppc.ca.gov">Fair Political Practices Commission</a> in an effort to increase government
+            transparency. This data may be subject to errors and gaps and should not be taken as a comprehensive data-set.
             For more information on the data, visit
             <a href="http://captricity.com/datadeathmatch/">http://captricity.com/datadeathmatch</a> or
             <a href="http://www.fppc.ca.gov">http://www.fppc.ca.gov </a>
