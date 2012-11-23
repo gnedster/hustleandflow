@@ -1,9 +1,13 @@
 collection @gifts
 attributes :value, :description, :image_uri
 child :donor do 
-    attributes :name
+    node :name do |u| 
+        u.name.titlecase
+    end
 end
 
 child :judge do
-    attributes :first_name, :last_name, :middle_name
+    node :middle_name do |u|
+        u.middle_name.titlecase
+    end
 end
