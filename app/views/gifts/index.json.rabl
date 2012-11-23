@@ -1,22 +1,15 @@
 collection @gifts
-attributes :value, :description, :image_uri
+attributes              :value, :image_uri
+node(:description)      { |u| u.description.titlecase }
 child :donor do 
-    node :name do |u| 
-        u.name.titlecase
-    end
-    attributes :affiliation, :address_raw
+    node(:name)         { |u| u.name.titlecase }
+    node(:affiliation)  { |u| (u.affiliation||"").titlecase }
+    node(:address_raw)  { |u| (u.address_raw||"").titlecase }
 end
 
 child :judge do
-    node :first_name do |u|
-        u.first_name.titlecase
-    end
-    node :last_name do |u|
-        u.last_name.titlecase
-    end
-
-    node :middle_name do |u|
-        u.middle_name.titlecase
-    end
-    attributes :agency
+    node(:first_name)   { |u| u.first_name.titlecase }
+    node(:last_name)    { |u| u.last_name.titlecase }
+    node(:middle_name)  { |u| u.middle_name.titlecase }
+    node(:agency)       { |u| u.agency.titlecase }
 end

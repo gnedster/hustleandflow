@@ -1,13 +1,11 @@
 collection @gifts
-attributes :value, :description, :image_uri
+node(:description)      { |u| u.description.titlecase }
+attribute               :value, :image_uri
+
 child :donor do 
-    node :name do |u| 
-        u.name.titlecase
-    end
+    node(:name)         { |u| u.name.titlecase }
 end
 
 child :judge do
-    node :middle_name do |u|
-        u.middle_name.titlecase
-    end
+    node(:middle_name)  {|u| u.middle_name.titlecase }
 end
