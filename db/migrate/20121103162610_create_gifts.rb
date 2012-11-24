@@ -4,7 +4,7 @@ class CreateGifts < ActiveRecord::Migration
       t.integer     :id
       t.string      :description
       t.decimal     :value
-      t.string      :type
+      t.integer     :gift_type_id
       t.date        :date_given
       t.string      :address_raw
       t.decimal     :latitude
@@ -17,5 +17,6 @@ class CreateGifts < ActiveRecord::Migration
 
     add_foreign_key :gifts, :donors
     add_foreign_key :gifts, :judges
+    add_foreign_key :gifts, :gift_types
   end
 end
