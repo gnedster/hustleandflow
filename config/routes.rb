@@ -1,15 +1,25 @@
 Openjudge2::Application.routes.draw do
   root :to => "home#index"
+
+  resources :home, :only => [:index] do
+    collection do
+      get :visualization
+    end
+  end
+
   resources :donors, :only => [:index, :show]
 
   resources :judges, :only => [:index, :show] do
-    get :autocomplete_judge_first_name, :on => :collection
+    collection do
+      get :autocomplete_judge_first_name
+    end
   end
 
   resources :gifts, :only => [:index, :show] do
-      get 'mobile', :on => :collection
+    collection do
+      get :mobile
+    end
   end
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
