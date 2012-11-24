@@ -3,7 +3,7 @@ Openjudge2::Application.routes.draw do
   resources :donors, :only => [:index, :show]
 
   resources :judges, :only => [:index, :show] do
-    get :autocomplete_judge_full_name, :on => :collection
+    get :autocomplete_judge_first_name, :on => :collection
   end
 
   resources :gifts, :only => [:index, :show] do

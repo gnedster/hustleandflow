@@ -44,8 +44,8 @@
 
                     <!-- start search box -->
                     <div class="searchboxright">
-                        <%= form_for :judge, :url => judge_path, :method => :get do |f| %>
-                            <%=  f.autocomplete_field :full_name, autocomplete_judge_full_name_judges_path %>
+                        <%= form_tag 'judges/index', :method => :get do %>
+                            <%= autocomplete_field_tag 'id', '', autocomplete_judge_first_name_judges_path, :placeholder => "Search for a Judge..." %>
                         <% end %>
                     </div>
                     <!--/.nav-collapse -->

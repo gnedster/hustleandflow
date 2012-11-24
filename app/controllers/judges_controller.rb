@@ -1,5 +1,5 @@
 class JudgesController < ApplicationController
-  autocomplete :judge, :full_name
+  autocomplete :judge, :first_name, :full => true, :extra_data => [:last_name], :display_value => :full_name
 
   # GET /judges
   # GET /judges.json
