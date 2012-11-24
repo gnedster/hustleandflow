@@ -8,6 +8,6 @@ class Judge < ActiveRecord::Base
   end
 
   def total_value
-    self.gifts.inject(0){|sum, x| sum + x.value }
+    self.gifts.inject(0){|sum, x| sum + (x.value||0) }
   end
 end
