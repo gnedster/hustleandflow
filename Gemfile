@@ -1,11 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
-gem 'foreigner'
 gem 'gmaps4rails'
-gem 'tilt'
-gem 'fusion_tables'
-gem 'google_visualr'
 gem 'neography'
 gem 'html5shiv-rails'
 gem 'pg'
@@ -13,6 +9,7 @@ gem 'rabl'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'rails3-jquery-autocomplete'
+gem 'gon'
 
 gem 'd3_rails'
 gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
@@ -26,6 +23,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'bootstrap-sass'
+  gem 'foreigner'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby

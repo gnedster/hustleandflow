@@ -53,11 +53,10 @@ GEM
       multi_json (~> 1.0)
     foreigner (1.2.1)
       activerecord (>= 3.0.0)
-    fusion_tables (0.3.2)
-      gdata_19 (>= 1.1.2)
-    gdata_19 (1.1.5)
     gmaps4rails (1.5.6)
-    google_visualr (2.1.5)
+    gon (4.0.1)
+      actionpack (>= 2.3.0)
+      json
     hike (1.2.1)
     html5shiv-rails (0.0.2)
       railties (>= 3.2.0, < 5.0)
@@ -148,9 +147,8 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   d3_rails
   foreigner
-  fusion_tables
   gmaps4rails
-  google_visualr
+  gon
   html5shiv-rails
   jquery-datatables-rails!
   jquery-rails
@@ -161,5 +159,4 @@ DEPENDENCIES
   rails (= 3.2.8)
   rails3-jquery-autocomplete
   sass-rails (~> 3.2.3)
-  tilt
   uglifier (>= 1.0.3)
