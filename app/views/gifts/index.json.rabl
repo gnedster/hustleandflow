@@ -1,6 +1,11 @@
 collection @gifts
 attributes              :value, :image_uri
 node(:description)      { |u| u.description.titlecase }
+
+child :gift_type do
+    node(:gift_type)         { |u| u.gift_type.titlecase }
+end
+
 child :donor do 
     node(:name)         { |u| u.name.titlecase }
     node(:affiliation)  { |u| (u.affiliation||"").titlecase }
