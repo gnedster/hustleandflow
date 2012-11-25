@@ -1,15 +1,19 @@
-<!-- tables start
-================================================== -->
+<div id="myCarousel" class="carousel slide">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="active item">
+            <%= image_tag "supreme_court.jpg" %>
 
-<div class="container tablesb">
-    <div class="row">
-        <div class="span12 headlinecopy">
-            <div class="infoheadline">
-                Open Judge CA -- an effort to bring great usability to public data on gifts disclosed by Judges in California (2011).
+            <div class="carousel-caption">
+                <h4>
+                    OpenJudge
+                </h4>
+                <p>An effort to better disclose income information about California judges.</p>
             </div>
-
-            <div class="row tablestboxes">
-                <div class="row tablestboxes">
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="row">
                     <div class="span4">
                         <table class="table table-hover">
                             <thead>
@@ -28,105 +32,41 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-                <div class="span4">
-                    <div class="heatmap1">
-                        <img src="assets/cadatawordie.png" width="">
+
+                    <div class="span5">
+                        <%= image_tag "cadatawordie.png" %>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
 
-    <!-- tables end -->
+<div class="container">
+    <div class="row">
+        <div class="span4">
+            <h2>Hello</h2>
+            <p>asdfa</p>
+            <a class="btn">View Details</a>
 
+        </div>
+        <div class="span4">
+            <h2>Hello</h2>
+            <p>asdfa</p>
 
-    <!-- Marketing messaging and featurettes
-   ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+        </div>
+        <div class="span4">
+            <h2>Hello</h2>
+            <p>asdfa</p>
 
-    <div class="container marketing">
-        <hr class="featurette-divider">
-        <div class="judgeheadline"> Meet the Open Judge Civic Geek Squad</div>
-
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-            <div class="span3 teamb">
-                <img class="img-circle" src="assets/cait.jpg">
-                <h4>Cathryn Posey</h4>
-                <ul class="unstyled">
-                    <li><i class="icon-user icon-large"></i>Brand and design concepts</li>
-                    <li><i class="icon-twitter icon-large"></i> <a href="http://twitter.com/catpoetry">@catpoetry</a></li>
-                </ul>
-            </div>
-            <!-- /.span3 -->
-
-            <div class="span3 teamb">
-                <img class="img-circle" src="assets/ed.jpg">
-                <h4>Edward Ng</h4>
-                <ul class="unstyled">
-                    <li><i class="icon-user icon-large"></i>Generalist</li>
-                    <li><i class="icon-twitter icon-large"></i><a href="http://twitter.com/gnedster454">@gnedster454</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.span3 -->
-
-            <div class="span3 teamb">
-                <img class="img-circle" src="assets/kamil.jpg">
-                <h4>Kamil Pilch</h4>
-                <ul class="unstyled">
-                    <li><i class="icon-user icon-large"></i> Hacker</li>
-                    <li><i class="icon-twitter icon-large"></i>Not On Twitter...</li>
-                </ul>
-            </div>
-            <!-- /.span3 -->
-
-            <div class="span3 teamb">
-                <img class="img-circle" src="assets/kaming.jpg">
-                <h4>Kaming Li</h4>
-                <ul class="unstyled">
-                    <li><i class="icon-user icon-large"></i> iOS Developer</li>
-                    <li><i class="icon-twitter icon-large"></i> <a href="http://twitter.com/mimi_sf">@mimi_sf</a></li>
-                </ul>
-            </div>
-            <!-- /.span3 -->
-
-            <div class="span3 teamb">
-                <img class="img-circle" src="assets/renee.jpg">
-                <h4>Renee DiResta</h4>
-                <ul class="unstyled">
-                    <li><i class="icon-user icon-large"></i> Hacker</li>
-                    <li><i class="icon-twitter icon-large"></i><a href="http://twitter.com/noupside"> @noupside</a></li>
-                    </a>
-                </ul>
-            </div>
-            <!-- /.span3 -->
-
-            <div class="span3 teamb">
-                <img class="img-circle" src="assets/wayne.jpg">
-                <h4>Wayne Sutton</h4>
-                <ul class="unstyled">
-                    <li><i class="icon-user icon-large"></i> UI/UX Designer</li>
-                    <li><i class="icon-twitter icon-large"></i> <a href="http://twitter.com/waynesutton">WayneSutton
-                    </li>
-                    </a>
-                </ul>
-            </div>
-            <!-- /.span3 -->
-
-
-            <div class="span3 teamb">
-                <img class="img-circle" src="assets/adria.jpg">
-                <h4>Adria Richards</h4>
-                <ul class="unstyled">
-                    <li><i class="icon-user icon-large"></i> Hacker</li>
-                    <li><i class="icon-twitter icon-large"></i>
-                        <a href="http://twitter.com/AdriaRichards"> @AdriaRichards</li>
-                    </a>
-                </ul>
-            </div>
         </div>
     </div>
+
 </div>
+
+<%= javascript_tag do %>
+    $('.carousel').carousel();
+<% end %>

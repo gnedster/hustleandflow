@@ -5,7 +5,6 @@
         <%= include_gon %>
         <%= stylesheet_link_tag "application", :media => "all" %>
         <%= javascript_include_tag "application", "html5shiv-printshiv"  %>
-        <%= javascript_include_tag "html5shiv-printshiv" %>
         <%= csrf_meta_tags %>
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic"/>
 
@@ -21,34 +20,36 @@
     <!-- NAVBAR
     ================================================== -->
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
-    <div class="container navbar-wrapper">
-        <div class="navbar navbar-inverse">
-            <div class="navbar-inner">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
                 <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="/"> <%= image_tag "openjudgelogo.png" %> </a>
+                <a class="brand" href="/"><%= image_tag "openjudgelogo3.png" %></a>
 
                 <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
 
                 <div class="nav-collapse collapse">
                     <ul class="nav">
-                        <li><%= link_to "Home", root_path %></li>
-                        <li><%= link_to "Judges", judges_path %></li>
-                        <li><%= link_to "Visualization", visualization_home_index_path %></li>
+                        <li class=<%= cp(root_path) %>><%= link_to "Home", root_path%></li>
+                        <li class=<%= cp(judges_path) %>><%= link_to "Judges", judges_path %></li>
+                        <li class=<%= cp(visualization_home_index_path) %>><%= link_to "Visualization", visualization_home_index_path %></li>
                         <li><a href="#abouttext" data-toggle="modal">About</a></li>
+                        <li class=<%= cp(team_home_index_path) %>><%= link_to "Team", team_home_index_path %></li>
                     </ul>
-
-                    <!-- start search box -->
-                    <div class="searchboxright">
-                        <%= form_tag 'judges/index', :method => :get do %>
-                            <%= autocomplete_field_tag 'id', '', autocomplete_judge_first_name_judges_path, :placeholder => "Search for a Judge..." %>
-                        <% end %>
-                    </div>
                     <!--/.nav-collapse -->
+                </div>
+
+
+                <!-- start search box -->
+                <div class="searchboxright">
+                    <%= form_tag 'judges/index', :method => :get do %>
+                        <%= autocomplete_field_tag 'id', '', autocomplete_judge_first_name_judges_path, :placeholder => "Search for a Judge..." %>
+                    <% end %>
                 </div>
                 <!-- /.navbar-inner -->
             </div>
@@ -63,8 +64,7 @@
             <h3 id="aboutModal">About Open Judge</h3>
         </div>
         <div class="modal-body">
-            <a href="index.html"> <%= image_tag "openjudgelogo2.png" %> </a>
-            </br>
+            <p><a href="index.html"> <%= image_tag "openjudgelogo2.png" %> </a></p>
             <h4>About:</h4>
             OpenJudge CA is a project created as a part of
             <a href="http://codeforamerica.org/about/">Code For America’s </a> Data Deathmatch Hackathon (11/2/12-11/3/12). In an
@@ -89,40 +89,9 @@
 
     <!-- FOOTER -->
     <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
 
-        <p>OpenJudge &copy; 2012 &middot; <a href="http://codeforamerica.org"><%= image_tag "cfalogo.png" %></a> &middot;
-            <a href="#privacypolicy" data-toggle="modal">Privacy Policy</a> <!-- &middot; <a href="#">Terms</a> -->
-
-            <!-- Modal -->
-
-        <div id="privacypolicy" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Privacy Policy</h3>
-
-            </div>
-            <div class="modal-body">
-                <h4>Data disclaimer:</h4>
-
-                <p>
-                    This data is based on digitization by <a href="http://captricity.com/datadeathmatch/">Capacity</a> of
-                    the 2011 Statements of Economic Interests filings by most California Judges in 2012 and provided by the
-                    <a href="http://www.fppc.ca.gov">Fair Political Practices Commission</a> in an effort to increase
-                    government transparency. This data may be subject to errors and gaps and should not be taken as a
-                    comprehensive data-set. For more information on the data, visit
-                    <a href="http://captricity.com/datadeathmatch/">http://captricity.com/datadeathmatch</a> or
-                    <a href="http://www.fppc.ca.gov">http://www.fppc.ca.gov </a>
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-
-            </div>
-        </div>
-
-        <!-- about to trigger modal end -->
-
+        <hr class="featurette-divider">
+        <p><a href="http://codeforamerica.org"><%= image_tag "cfalogo.png" %></a></p>
 
         <!-- AddThis Button BEGIN -->
         <div class="addthis_toolbox addthis_default_style ">
