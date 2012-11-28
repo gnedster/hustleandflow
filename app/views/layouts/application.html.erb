@@ -3,7 +3,7 @@
     <head>
         <title>OpenJudge</title>
         <%= include_gon %>
-        <%= stylesheet_link_tag "application", :media => "all" %>
+        <%= stylesheet_link_tag "application", "bootstrap/bootstrap", :media => "all" %>
         <%= javascript_include_tag "application", "html5shiv-printshiv"  %>
         <%= csrf_meta_tags %>
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic"/>
@@ -58,6 +58,7 @@
                 </div>
                 <!-- /.container -->
             </div>
+
             <div id="abouttext" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
