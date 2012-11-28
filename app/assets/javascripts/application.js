@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require bootstrap
 //= require d3.v2
 //= require jquery.ui.all
 //= require autocomplete-rails
