@@ -5,6 +5,7 @@ class JudgesController < ApplicationController
   # GET /judges.json
   def index
     @judges = Judge.all
+    @top_judges = Judge.all().sort_by { |j| j.total_value}.reverse![0..9]
 
     respond_to do |format|
       format.html # index.html.erb
@@ -20,7 +21,7 @@ class JudgesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @judge }
-  end
+    end
 
     #def create_graph
     #  neo = Neography::Rest.new

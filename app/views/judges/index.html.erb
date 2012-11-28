@@ -1,17 +1,38 @@
-<h1>Listing judges</h1>
+<div class="container">
+    <h1>Listing judges</h1>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    <div class="row">
+        <div class="span4">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <% for @judge in @top_judges %>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Name: <%= "#{@judge.full_name}" %></td></tr>
+                            <tr><td>Gift Income: <%= number_to_currency @judge.total_value %></td></tr>
+                            <tr><td>Agency: <%= "#{@judge.agency.titlecase}" %></td></tr>
+                            <tr><td>Position: <%= "#{@judge.position.titlecase}" %></td></tr>
+                        </tbody>
+                    </table>
+                <% end %>
+                </tbody>
+            </table>
+        </div>
 
-<% @judges.each do |judge| %>
-  <tr>
-    <td><%= link_to 'Show', judge %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
+        <div class="span5">
+            <%= image_tag "cadatawordie.png" %>
+        </div>
+    </div>
+</div>

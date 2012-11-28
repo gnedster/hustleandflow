@@ -16,11 +16,13 @@
         <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
 
     </head>
+
     <body>
     <!-- NAVBAR
     ================================================== -->
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <header>
+        <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
                 <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
@@ -44,7 +46,6 @@
                     <!--/.nav-collapse -->
                 </div>
 
-
                 <!-- start search box -->
                 <div class="searchboxright">
                     <%= form_tag 'judges/index', :method => :get do %>
@@ -57,8 +58,7 @@
         </div>
         <!-- /.container -->
     </div>
-
-    <div id="abouttext" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div id="abouttext" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             <h3 id="aboutModal">About Open Judge</h3>
@@ -84,25 +84,28 @@
             <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
         </div>
     </div>
+    </header>
 
-    <%= yield %>
+    <div class="content">
+        <%= yield %>
+    <div>
 
     <!-- FOOTER -->
     <footer>
+        <div class="container">
+            <p><a href="http://codeforamerica.org"><%= image_tag "cfalogo.png" %></a></p>
 
-        <hr class="featurette-divider">
-        <p><a href="http://codeforamerica.org"><%= image_tag "cfalogo.png" %></a></p>
-
-        <!-- AddThis Button BEGIN -->
-        <div class="addthis_toolbox addthis_default_style ">
-            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-            <a class="addthis_button_tweet"></a>
-            <a class="addthis_button_pinterest_pinit"></a>
-            <a class="addthis_counter addthis_pill_style"></a>
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style ">
+                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                <a class="addthis_button_tweet"></a>
+                <a class="addthis_button_pinterest_pinit"></a>
+                <a class="addthis_counter addthis_pill_style"></a>
+            </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+            <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=wayne12"></script>
+            <!-- AddThis Button END -->
         </div>
-        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-        <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=wayne12"></script>
-        <!-- AddThis Button END -->
     </footer>
 
     </body>

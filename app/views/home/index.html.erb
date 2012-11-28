@@ -1,70 +1,33 @@
-<div id="myCarousel" class="carousel slide">
-    <!-- Carousel items -->
-    <div class="carousel-inner">
-        <div class="active item">
-            <%= image_tag "supreme_court.jpg" %>
-
-            <div class="carousel-caption">
-                <h4>
-                    OpenJudge
-                </h4>
-                <p>An effort to better disclose income information about California judges.</p>
-            </div>
-        </div>
-        <div class="item">
-            <div class="container">
-                <div class="row">
-                    <div class="span4">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <% for @judge in @top_judges %>
-                                <tr class="success">
-                                    <td><%= link_to "#{@judge.full_name}", judge_path(@judge.id) %></td>
-                                    <td><%= number_to_currency @judge.total_value %></td>
-                                </tr>
-                            <% end %>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="span5">
-                        <%= image_tag "cadatawordie.png" %>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="home container">
+    <div class="hero-unit">
+        <h1>
+            OpenJudge
+        </h1>
+        <p>
+            The best app in town.
+        </p>
     </div>
-    <!-- Carousel nav -->
-    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
 
 <div class="container">
     <div class="row">
         <div class="span4">
-            <h2>Hello</h2>
+            <h2>Analyze</h2>
             <p>asdfa</p>
-            <a class="btn">View Details</a>
+            <%= link_to "View Judges", judges_path, :class=>"btn" %>
 
         </div>
         <div class="span4">
-            <h2>Hello</h2>
-            <p>asdfa</p>
+            <h2>Visualize</h2>
+            <p>Look at the network graph</p>
+            <%= link_to "View Visualization", visualization_home_index_path, :class=>"btn" %>
 
         </div>
         <div class="span4">
-            <h2>Hello</h2>
-            <p>asdfa</p>
-
+            <h2>Go mobile</h2>
+            <p>Tweet gifts.</p>
         </div>
     </div>
-
 </div>
 
 <%= javascript_tag do %>
