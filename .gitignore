@@ -1,8 +1,10 @@
 tmp/*
 log/*
+.idea/*
 cassandra.pid
-.DS_Store
+*.DS_Store
 *.pyc
-*.idea/
 *.orig
-
+*.db
+*.sha1
+*.log
