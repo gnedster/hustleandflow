@@ -49,6 +49,7 @@ Openjudge2::Application.configure do
   # config.assets.precompile += %w( search.js )
 
   config.assets.precompile += %w[ bootstrap/*.css bootstrap/*.js ]
+  config.assets.precompile += %w[ stickyfooter/*.css ]
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false

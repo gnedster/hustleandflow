@@ -11,6 +11,7 @@
  *= require_self
  *= require_tree .
  *= require jquery.ui.all
+ *= require stickyfooter/stickyfooter
  */
 
 @import "bootstrap/bootstrap.css";
@@ -18,12 +19,10 @@
 footer {
   background: url("bgnoise.png") repeat;
   padding-top: 10px;
-  position:absolute;
-  bottom:0;
   width:100%
 }
 
-.content {
+#main {
   margin-top: 60px;
 }
 

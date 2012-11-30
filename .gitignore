@@ -8,3 +8,4 @@ cassandra.pid
 *.db
 *.sha1
 *.log
+*.scssc

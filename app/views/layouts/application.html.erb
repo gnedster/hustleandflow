@@ -18,96 +18,13 @@
     </head>
 
     <body>
-        <!-- NAVBAR
-        ================================================== -->
-        <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
-        <header>
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-                        <a class="brand" href="/"><%= image_tag "openjudgelogo.png" %></a>
-
-                        <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-
-                        <div class="nav-collapse collapse">
-                            <ul class="nav">
-                                <li class=<%= cp(root_path) %>><%= link_to "Home", root_path%></li>
-                                <li class=<%= cp(judges_path) %>><%= link_to "Judges", judges_path %></li>
-                                <li class=<%= cp(visualization_home_index_path) %>><%= link_to "Visualization", visualization_home_index_path %></li>
-                                <li><a href="#abouttext" data-toggle="modal">About</a></li>
-                                <li class=<%= cp(team_home_index_path) %>><%= link_to "Team", team_home_index_path %></li>
-                            </ul>
-                            <!--/.nav-collapse -->
-                        </div>
-
-                        <!-- start search box -->
-                        <div class="searchboxright">
-                            <%= form_tag 'judges/index', :method => :get do %>
-                                <%= autocomplete_field_tag 'id', '', autocomplete_judge_first_name_judges_path, :placeholder => "Search for a Judge..." %>
-                            <% end %>
-                        </div>
-                        <!-- /.navbar-inner -->
-                    </div>
-                    <!-- /.navbar -->
-                </div>
-                <!-- /.container -->
+    <%= render "shared/navbar" %>
+        <div id="wrap">
+            <div id="main">
+                <%= yield %>
             </div>
-
-            <div id="abouttext" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h3 id="aboutModal">About Open Judge</h3>
-                </div>
-                <div class="modal-body">
-                    <p><a href="index.html"> <%= image_tag "openjudgelogo2.png" %> </a></p>
-                    <h4>About:</h4>
-                    OpenJudge CA is a project created as a part of
-                    <a href="http://codeforamerica.org/about/">Code For America’s </a> Data Deathmatch Hackathon (11/2/12-11/3/12). In an
-                    effort to make public data more accessible, this project was powered by data from Fair Political Practice
-                    Commission's collection of the 2011 Statements of Economic Interests filed by many California Judges in 2012.
-
-                    <h4>Data disclaimer:</h4>
-                    This data is based on digitization by <a href="http://captricity.com/datadeathmatch/">Captricity</a> of the 2011
-                    Statements of Economic Interests filings by most California Judges in 2012 and provided by the
-                    <a href="http://www.fppc.ca.gov">Fair Political Practices Commission</a> in an effort to increase government
-                    transparency. This data may be subject to errors and gaps and should not be taken as a comprehensive data-set.
-                    For more information on the data, visit
-                    <a href="http://captricity.com/datadeathmatch/">http://captricity.com/datadeathmatch</a> or
-                    <a href="http://www.fppc.ca.gov">http://www.fppc.ca.gov </a>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                </div>
-            </div>
-        </header>
-
-        <div class="content">
-            <%= yield %>
         </div>
 
-        <!-- FOOTER -->
-        <footer>
-            <div class="container">
-                <p><a href="http://codeforamerica.org"><%= image_tag "cfalogo.png" %></a></p>
-
-                <!-- AddThis Button BEGIN -->
-                <div class="addthis_toolbox addthis_default_style ">
-                    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-                    <a class="addthis_button_tweet"></a>
-                    <a class="addthis_button_pinterest_pinit"></a>
-                    <a class="addthis_counter addthis_pill_style"></a>
-                </div>
-                <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-                <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=wayne12"></script>
-                <!-- AddThis Button END -->
-            </div>
-        </footer>
-
+    <%= render "shared/footer" %>
     </body>
 </html>
