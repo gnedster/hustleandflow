@@ -42,7 +42,7 @@ $(document).ready(function(){
         var coord = d3.svg.mouse(this);
         // now we just position the infobox roughly where our mouse is
         infobox.style("left", coord[0]  + 100 + "px" );
-        infobox.style("top", coord[1] + "px");
+        infobox.style("top", coord[1] + 120 + "px");
     };
 
     var force = d3.layout.force()
