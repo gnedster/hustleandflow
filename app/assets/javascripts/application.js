@@ -17,3 +17,5 @@
 //= require jquery.ui.all
 //= require autocomplete-rails
 //= require js-routes
+//= require bootstrap/bootstrap-modal
+//= require bootstrap/bootstrap-transition
