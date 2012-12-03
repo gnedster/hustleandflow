@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'rails3-jquery-autocomplete'
 gem 'gon'
+gem 'js-routes'
 
 gem 'd3_rails'
 gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'

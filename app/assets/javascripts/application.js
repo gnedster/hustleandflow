@@ -16,3 +16,4 @@
 //= require d3.v2
 //= require jquery.ui.all
 //= require autocomplete-rails
+//= require js-routes
