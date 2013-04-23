@@ -5793,15 +5793,8 @@ $(document).ready(function() {
 		return color(d.group);
 	})
 		.on("mouseover", myMouseOverFunction)
-		.on("mouseout", myMouseOutFunction)
-		.style("cursor", "pointer")
-		.on("click", function(d) {
-		var url;
-		if (d.group == 2) url = Routes.judge_path(d.id);
-		console.log(url);
-		window.location.pathname = url;
-	});
-
+		.on("mouseout", myMouseOutFunction);
+		
 	force.on("tick", function() {
 		link.attr("x1", function(d) {
 			return d.source.x;
