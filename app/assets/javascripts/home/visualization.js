@@ -5797,8 +5797,7 @@ $(document).ready(function() {
 		.style("cursor", "pointer")
 		.on("click", function(d) {
 		var url;
-		if (d.group == 1) url = Routes.donor_path(d.id);
-		else if (d.group == 2) url = Routes.judge_path(d.id);
+		if (d.group == 2) url = Routes.judge_path(d.id);
 		console.log(url);
 		window.location.pathname = url;
 	});
