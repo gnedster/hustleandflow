@@ -5,5 +5,7 @@ class CreateGiftTypes < ActiveRecord::Migration
       t.string      :gift_type
       t.timestamps
     end
+
+    add_foreign_key :gifts, :gift_types
   end
 end

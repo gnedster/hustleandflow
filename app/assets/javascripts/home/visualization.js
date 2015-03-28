@@ -6,6 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
+debugger;
 $(document).ready(function() {
 	var nodes = [{
 		"name": " tate snyder kimsey",
@@ -5761,6 +5762,7 @@ $(document).ready(function() {
 	.size([width, height]);
 
 	var svg = d3.select("#chart").append("svg") //finds chart div, creates svg element
+
 	.attr("width", width)
 		.attr("height", height)
 		.on("mousemove", myMouseMoveFunction);
@@ -5794,7 +5796,7 @@ $(document).ready(function() {
 	})
 		.on("mouseover", myMouseOverFunction)
 		.on("mouseout", myMouseOutFunction);
-		
+
 	force.on("tick", function() {
 		link.attr("x1", function(d) {
 			return d.source.x;

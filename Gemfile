@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+ruby "2.0.0"
+gem 'rails', '~> 3.2.14'
 gem 'gmaps4rails'
-gem 'neography'
 gem 'html5shiv-rails'
 gem 'pg'
 gem 'rabl'

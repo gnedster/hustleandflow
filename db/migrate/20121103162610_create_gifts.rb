@@ -17,6 +17,5 @@ class CreateGifts < ActiveRecord::Migration
 
     add_foreign_key :gifts, :donors
     add_foreign_key :gifts, :judges
-    add_foreign_key :gifts, :gift_types
   end
 end

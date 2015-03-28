@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121124001649) do
+ActiveRecord::Schema.define(:version => 20121124210707) do
 
   create_table "donors", :force => true do |t|
     t.string   "name"
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(:version => 20121124001649) do
   end
 
   add_foreign_key "gifts", "donors", :name => "gifts_donor_id_fk"
+  add_foreign_key "gifts", "gift_types", :name => "gifts_gift_type_id_fk"
   add_foreign_key "gifts", "judges", :name => "gifts_judge_id_fk"
 
 end

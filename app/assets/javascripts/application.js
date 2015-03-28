@@ -13,8 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-//= require d3.v2
-//= require jquery.ui.all
+//= require d3
+//= require jquery-ui
 //= require autocomplete-rails
 //= require js-routes
 //= require bootstrap/bootstrap-modal
