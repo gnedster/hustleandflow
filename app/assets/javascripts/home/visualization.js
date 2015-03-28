@@ -6,7 +6,6 @@
  * To change this template use File | Settings | File Templates.
  */
 
-debugger;
 $(document).ready(function() {
 	var nodes = [{
 		"name": " tate snyder kimsey",
