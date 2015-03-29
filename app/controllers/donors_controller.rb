@@ -2,7 +2,7 @@ class DonorsController < ApplicationController
   # GET /donors
   # GET /donors.json
   def index
-    @donors = Donor.all
+    @donors = Donor.all.sort_by { |j| j.total_value}.reverse
 
     respond_to do |format|
       format.html # index.html.erb

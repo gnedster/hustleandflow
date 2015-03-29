@@ -1,20 +1,23 @@
 <div class="container">
   <h2>All Judges</h2>
+  <p>All judges in our database sorted by total gift income.</p>
   <div class="row">
     <table class="table table-hover">
       <thead>
       <tr>
         <th>Name</th>
-        <th>Total Gift Income</th>
         <th>Agency</th>
+        <th>Total Gift Income</th>
+        <th>Number of Gifts Recieved</th>
       </tr>
       </thead>
       <tbody>
       <% for @judge in @judges %>
         <tr>
           <td><%= link_to "#{@judge.full_name}", judge_path(@judge.id) %></td>
-          <td><%= number_to_currency @judge.total_value %></td>
           <td><%= "#{@judge.agency.titlecase}" %></td>
+          <td><%= number_to_currency @judge.total_value %></td>
+          <td><%= "#{@judge.gift_count}" %></td>
         </tr>
       <% end %>
       </tbody>

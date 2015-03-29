@@ -3,29 +3,29 @@
         <h1>
             OpenJudge
         </h1>
-        <p>
-            An effort to bring increased visibility of gift income of judges in California
-        </p>
+        <div>
+            An effort to bring increased visibility of gift income of judges in California.</br>
+            Winning entry for the 2012 Data DeathMatch Hackathon hosted by Code for America.
+        </div>
     </div>
 </div>
 
 <div class="container">
     <div class="row">
         <div class="span4">
-            <h2>Analyze</h2>
-            <p>Look at your judge.</p>
+            <h2>Judges</h2>
+            <p>Review all of the judges currently in our database.</p>
             <%= link_to "View Judges", judges_path, :class=>"btn" %>
-
         </div>
         <div class="span4">
-            <h2>Visualize</h2>
-            <p>Look at the network graph.</p>
-            <%= link_to "View Visualization", visualization_home_index_path, :class=>"btn" %>
-
+            <h2>Donors</h2>
+            <p>Review all of the donors currently in our database.</p>
+            <%= link_to "View Donors", donors_path, :class=>"btn" %>
         </div>
         <div class="span4">
-            <h2>Go mobile</h2>
-            <p>Tweet gifts.</p>
+            <h2>Visualizations</h2>
+            <p>See the connections between donors and judges.</p>
+            <%= link_to "View Visualizations", visualization_home_index_path, :class=>"btn" %>
         </div>
     </div>
 </div>

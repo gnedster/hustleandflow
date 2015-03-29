@@ -5725,46 +5725,15 @@ $(document).ready(function() {
 	}));
 	var linewidth = d3.scale.linear().range([1, 10]).domain([1, maxDonation]);
 
-	var myMouseOverFunction = function() {
-		var circle = d3.select(this);
-		circle.attr("stroke", "black");
-
-		// show infobox div on mouseover.
-		// block means sorta "render on the page" whereas none would mean "don't render at all"
-		d3.select(".infobox").style("display", "block");
-		// add test to p tag in infobox
-		d3.select("#infoboxContent")
-			.text(circle.attr("name"));
-	};
-
-	var myMouseOutFunction = function() {
-		var circle = d3.select(this);
-		circle.attr("stroke", "none");
-
-		// display none removes element totally, whereas visibility in last example just hid it
-		d3.select(".infobox").style("display", "none");
-	};
-
-	var myMouseMoveFunction = function() {
-		// save selection of infobox so that we can later change it's position
-		var infobox = d3.select(".infobox");
-		// this returns x,y coordinates of the mouse in relation to our svg canvas
-		var coord = d3.svg.mouse(this);
-		// now we just position the infobox roughly where our mouse is
-		infobox.style("left", coord[0] + 100 + "px");
-		infobox.style("top", coord[1] + 120 + "px");
-	};
-
 	var force = d3.layout.force()
 		.charge(-30)
 		.linkDistance(15) //change these
-	.size([width, height]);
+	    .size([width, height]);
 
-	var svg = d3.select("#chart").append("svg") //finds chart div, creates svg element
-
-	.attr("width", width)
-		.attr("height", height)
-		.on("mousemove", myMouseMoveFunction);
+    //finds chart div, creates svg element
+	var svg = d3.select("#chart").append("svg")
+                .attr("width", width)
+		        .attr("height", height)
 
 	//modified - load json data, call this function in-line instead
 	force.nodes(nodes)
@@ -5776,8 +5745,8 @@ $(document).ready(function() {
 		.enter().append("line")
 		.attr("class", "link")
 		.style("stroke-width", function(d) {
-		return linewidth(d.value);
-	});
+		    return linewidth(d.value);
+	    });
 
 	var node = svg.selectAll(".node")
 		.data(nodes)
@@ -5788,13 +5757,23 @@ $(document).ready(function() {
 	node.append("circle")
 		.attr("r", 5)
 		.attr("name", function(d) {
-		return d.name.titleize();
-	})
+    		return d.name.titleize();
+    	})
 		.style("fill", function(d) {
-		return color(d.group);
-	})
-		.on("mouseover", myMouseOverFunction)
-		.on("mouseout", myMouseOutFunction);
+		    return color(d.group);
+	    })
+
+	$("svg circle").tipsy({
+        gravity: "w",
+        html: true,
+        title: function() {
+        var el = $(this);
+
+        return [
+            "<strong>" + el.attr("name") + "</strong>",
+            ].join();
+        }
+  	});
 
 	force.on("tick", function() {
 		link.attr("x1", function(d) {

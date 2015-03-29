@@ -1,21 +1,28 @@
-<h1>Listing donors</h1>
-
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @donors.each do |donor| %>
-  <tr>
-    <td><%= link_to 'Show', donor %></td>
-    <td><%= link_to 'Edit', edit_donor_path(donor) %></td>
-    <td><%= link_to 'Destroy', donor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Donor', new_donor_path %>
+<div class="container">
+  <h2>All Donors</h2>
+  <p>All donors in our database sorted by total gift donations.</p>
+  <div class="row">
+    <table class="table table-hover">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Affiliation</th>
+        <th>Address</th>
+        <th>Total Gift Donations</th>
+        <th>Number of Donations</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% for @donor in @donors %>
+        <tr>
+          <td><%= link_to "#{@donor.name}", donor_path(@donor.id) %></td>
+          <td><%= "#{@donor.affiliation}" %></td>
+          <td><%= "#{@donor.address_raw}" %></td>
+          <td><%= "#{@donor.total_value}" %></td>
+          <td><%= "#{@donor.gift_count}" %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
