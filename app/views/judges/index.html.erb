@@ -14,7 +14,7 @@
       <tbody>
       <% for @judge in @judges %>
         <tr>
-          <td><%= link_to "#{@judge.full_name}", judge_path(@judge.id) %></td>
+          <td><%= "#{@judge.full_name}" %></td>
           <td><%= "#{@judge.agency.titlecase}" %></td>
           <td><%= number_to_currency @judge.total_value %></td>
           <td><%= "#{@judge.gift_count}" %></td>

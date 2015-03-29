@@ -15,7 +15,7 @@
       <tbody>
       <% for @donor in @donors %>
         <tr>
-          <td><%= link_to "#{@donor.name}", donor_path(@donor.id) %></td>
+          <td><%= "#{@donor.name}" %></td>
           <td><%= "#{@donor.affiliation}" %></td>
           <td><%= "#{@donor.address_raw}" %></td>
           <td><%= "#{@donor.total_value}" %></td>
