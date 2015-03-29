@@ -68,18 +68,18 @@ $(document).ready(function() {
         width: 400,
         title: function() {
         	function getActionWord() {
-        		return el.attr("group") === 1 ? "Donated" : "Received";
+        		return el.attr("group") === "1" ? "Donated" : "Received";
         	}
 
         	function getNodeType() {
-        		return el.attr("group") === 1 ? "Donor" : "Judge";
+        		return el.attr("group") === "1" ? "Donor" : "Judge";
         	}
 
 	        var el = $(this);
 
 	        return [
 	            "<h5>" + el.attr("name") + " (" + getNodeType() + ")</h5>",
-	            "<table>",
+	            "<table class='table table-condensed'>",
                 "<tbody>",
                 "<tr>",
 	            "<td>Amount " + getActionWord() + ": </td>",
@@ -90,7 +90,7 @@ $(document).ready(function() {
                 "<td>" + el.attr("gift-count") + "</td>",
                 "</tr>",
                 "</tbody>",
-	            "</table>",
+	            "</table>"
 	            ].join('');
 	        }
   		}

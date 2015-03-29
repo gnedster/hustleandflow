@@ -48,3 +48,8 @@ footer {
   padding: 14px 15px;
   font-size: 16px;
 }
+
+body {
+    .tipsy { font-size: 12px; }
+    .tipsy-inner { max-width: 400px; text-align: left; }
+}
