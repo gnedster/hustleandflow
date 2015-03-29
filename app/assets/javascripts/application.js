@@ -20,7 +20,7 @@
 //= require bootstrap/bootstrap-transition
 //= require jquery.tipsy/jquery.tipsy
 //= require underscore
-//= require_tree ./home
+//= require_self
 
 String.prototype.titleize = function() {
 	return this.replace(/\w\S*/g, function(txt) {
