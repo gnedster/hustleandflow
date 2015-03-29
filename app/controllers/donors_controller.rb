@@ -1,4 +1,5 @@
 class DonorsController < ApplicationController
+  caches_page :index, :gzip => :best_speed
   # GET /donors
   # GET /donors.json
   def index

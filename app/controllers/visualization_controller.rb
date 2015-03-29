@@ -1,4 +1,5 @@
 class VisualizationController < ApplicationController
+  caches_page :index, :gzip => :best_speed
   def index
     judges = Judge.select{ |j| j.total_value > 0 }
     .sort_by!{ |j| j.total_value * -1 }
