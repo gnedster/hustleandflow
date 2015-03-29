@@ -12,6 +12,7 @@ class VisualizationController < ApplicationController
         'name' => j.full_name,
         'group' => 2,
         'totalValue' => j.total_value,
+        'giftCount' => j.gift_count
       }]}
     ]
 
@@ -20,11 +21,10 @@ class VisualizationController < ApplicationController
           'name' => d.name,
           'group' => 1,
           'totalValue' => d.total_value,
+          'giftCount' => d.gift_count
         }]
       }
     ]
-
-
 
     gon.links = Gift.where('judge_id IS NOT NULL AND donor_id IS NOT NULL AND value IS NOT NULL')
       .map! { |g| {'source' => g.donor_id, 'target' => g.judge_id, 'value' => g.value }}

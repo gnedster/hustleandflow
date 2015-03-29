@@ -23,10 +23,6 @@ $(document).ready(function() {
 		        .attr("height", height),
 		link, node;
 
-	force.nodes(nodes)
-		.links(links)
-		.start();
-
 	link = svg.selectAll("line.link")
 		.data(links)
 		.enter().append("line")
@@ -45,6 +41,15 @@ $(document).ready(function() {
 		.attr("r", function(d) {
 			return circleRadius(d.totalValue);
 		})
+		.attr("group", function(d){
+			return d.group;
+		})
+		.attr("total-value", function(d) {
+    		return d.totalValue;
+    	})
+        .attr("gift-count", function(d) {
+            return d.giftCount;
+        })
 		.attr("name", function(d) {
     		return d.name.titleize();
     	})
@@ -52,18 +57,44 @@ $(document).ready(function() {
 		    return color(d.group);
 	    });
 
+    force.nodes(nodes)
+        .links(links)
+        .start();
+
 	//Adding tipsy support
 	$("svg circle").tipsy({
         gravity: "w",
         html: true,
+        width: 400,
         title: function() {
-        var el = $(this);
+        	function getActionWord() {
+        		return el.attr("group") === 1 ? "Donated" : "Received";
+        	}
 
-        return [
-            "<strong>" + el.attr("name") + "</strong>",
-            ].join();
-        }
-  	});
+        	function getNodeType() {
+        		return el.attr("group") === 1 ? "Donor" : "Judge";
+        	}
+
+	        var el = $(this);
+
+	        return [
+	            "<h5>" + el.attr("name") + " (" + getNodeType() + ")</h5>",
+	            "<table>",
+                "<tbody>",
+                "<tr>",
+	            "<td>Amount " + getActionWord() + ": </td>",
+	            "<td>$" + el.attr("total-value") + "</td>",
+                "</tr>",
+                "<tr>",
+                "<td>Number of Gifts " + getActionWord() + ": </td>",
+                "<td>" + el.attr("gift-count") + "</td>",
+                "</tr>",
+                "</tbody>",
+	            "</table>",
+	            ].join('');
+	        }
+  		}
+  	);
 
 	force.on("tick", function() {
 		link.attr("x1", function(d) {
