@@ -20,6 +20,7 @@
 //= require bootstrap/bootstrap-modal
 //= require bootstrap/bootstrap-transition
 //= require tipsy
+//= require underscore
 
 String.prototype.titleize = function() {
 	return this.replace(/\w\S*/g, function(txt) {

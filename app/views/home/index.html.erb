@@ -5,8 +5,9 @@
         </h1>
         <div>
             <strong>
-            An effort to bring increased visibility into <span style="color:#d62728">gift income of judges in California</span>.</br>
-            Entry for the <a target="_blank" href="http://www.codeforamerica.org/blog/2012/11/27/unlocking-new-value-from-government-data/">2012 Data DeathMatch Hackathon </a> hosted by <a target="_blank" href="http://www.codeforamerica.org/">Code for America</a>.
+            An effort to bring increased visibility into <span style="color:#d62728">gift income of judges in California</span></br>
+            Part of the <a target="_blank" href="https://www.codeforamerica.org/blog/2012/11/27/unlocking-new-value-from-government-data/">2012 Data DeathMatch Hackathon </a> hosted by <a target="_blank" href="https://www.codeforamerica.org/">Code for America</a>
+            </br>
             </strong>
         </div>
     </div>
@@ -16,18 +17,18 @@
     <div class="row">
         <div class="span4">
             <h2>Judges</h2>
-            <p>Review all of the judges currently in our database.</p>
+            <p>Review all <%= "#{@judges_count}" %> judges currently in our database.</p>
             <%= link_to "View Judges", judges_path, :class=>"btn" %>
         </div>
         <div class="span4">
             <h2>Donors</h2>
-            <p>Review all of the donors currently in our database.</p>
+            <p>Review all <%= "#{@donors_count}" %> donors currently in our database.</p>
             <%= link_to "View Donors", donors_path, :class=>"btn" %>
         </div>
         <div class="span4">
             <h2>Visualizations</h2>
             <p>See the connections between donors and judges.</p>
-            <%= link_to "View Visualizations", visualization_home_index_path, :class=>"btn" %>
+            <%= link_to "View Visualizations", visualization_index_path, :class=>"btn" %>
         </div>
     </div>
 </div>

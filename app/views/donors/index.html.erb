@@ -16,7 +16,7 @@
         <tr>
           <td><%= "#{@donor.name}" %></td>
           <td><%= "#{@donor.affiliation}" %></td>
-          <td><%= "#{@donor.total_value}" %></td>
+          <td><%= number_to_currency @donor.total_value %></td>
           <td><%= "#{@donor.gift_count}" %></td>
         </tr>
       <% end %>

@@ -3,12 +3,12 @@ Openjudge2::Application.routes.draw do
 
   resources :home, :only => [:index] do
     collection do
-      get :visualization
       get :team
     end
   end
 
   resources :donors, :only => [:index, :show]
+  resources :visualization, :only => [:index]
 
   resources :judges, :only => [:index, :show] do
     collection do
