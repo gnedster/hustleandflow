@@ -23,6 +23,10 @@ footer {
   width:100%
 }
 
+.ui-autocomplete {
+     z-index: 9999 !important;
+}
+
 #main {
   margin-top: 60px;
 }
