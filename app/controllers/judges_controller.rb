@@ -5,8 +5,7 @@ class JudgesController < ApplicationController
   # GET /judges
   # GET /judges.json
   def index
-    @judges = Judge.all
-    @top_judges = Judge.all().sort_by { |j| j.total_value}.reverse![0..9]
+    @judges = Judge.all.sort_by { |j| j.total_value}.reverse
 
     respond_to do |format|
       format.html # index.html.erb
