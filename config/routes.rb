@@ -1,6 +1,8 @@
 Openjudge2::Application.routes.draw do
   root :to => "home#index"
 
+  get '/home//visualization', to: redirect('/visualization')
+
   resources :home, :only => [:index] do
     collection do
       get :team

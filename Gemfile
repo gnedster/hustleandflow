@@ -15,7 +15,6 @@ gem 'underscore-rails'
 gem 'rest-client'
 
 gem 'd3_rails'
-gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
