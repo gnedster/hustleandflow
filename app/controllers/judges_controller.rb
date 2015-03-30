@@ -1,7 +1,7 @@
 class JudgesController < ApplicationController
   #TODO: Fix this autocomplete to be able to search for the full name
   autocomplete :judge, :first_name, :full => true, :extra_data => [:last_name], :display_value => :full_name
-  caches_page :index, :gzip => :best_speed
+  caches_page :index, :show, :gzip => :best_speed
   # GET /judges
   # GET /judges.json
   def index
@@ -16,7 +16,7 @@ class JudgesController < ApplicationController
   # GET /judges/1
   # GET /judges/1.json
   def show
-    @judge = Judge.find(params[:id])
+    @judge = Judge.includes(gifts: [:donor]).find(params[:id])
     #TODO: find donors with their respective gifts to their judge
 
     respond_to do |format|

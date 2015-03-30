@@ -13,7 +13,8 @@ class VisualizationController < ApplicationController
         'name' => j.full_name,
         'group' => 2,
         'totalValue' => j.total_value,
-        'giftCount' => j.gift_count
+        'giftCount' => j.gift_count,
+        'url' => judge_path(j)
       }]}
     ]
 
@@ -22,7 +23,8 @@ class VisualizationController < ApplicationController
           'name' => d.name,
           'group' => 1,
           'totalValue' => d.total_value,
-          'giftCount' => d.gift_count
+          'giftCount' => d.gift_count,
+          'url' => donor_path(d)
         }]
       }
     ]

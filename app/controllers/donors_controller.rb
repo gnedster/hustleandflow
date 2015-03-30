@@ -1,5 +1,5 @@
 class DonorsController < ApplicationController
-  caches_page :index, :gzip => :best_speed
+  caches_page :index, :show, :gzip => :best_speed
   # GET /donors
   # GET /donors.json
   def index
@@ -14,7 +14,7 @@ class DonorsController < ApplicationController
   # GET /donors/1
   # GET /donors/1.json
   def show
-    @donor = Donor.find(params[:id])
+    @donor = Donor.includes(gifts: [:judge]).find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

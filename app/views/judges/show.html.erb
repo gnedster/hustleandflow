@@ -1,59 +1,47 @@
-<!-- tables start
-================================================== -->
-<div class="container tablesb">
+<div class="container">
   <h2>
     <%= "#{@judge.full_name}" %>
   </h2>
-
   <div class="row">
-    <!-- tables start
-   ================================================== -->
-    <div class="container tablesb">
-      <div class="row">
-          <table class="table table-hover">
-            <thead>
-            <tr>
-              <th></th>
-              <th></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>Name: <%= "#{@judge.full_name}" %></td>
-            </tr>
-            <tr>
-              <td>Agency: <%= "#{@judge.agency.titlecase}" %></td>
-            </tr>
-            <tr>
-              <td>Position: <%= "#{@judge.position}" %></td>
-            </tr>
-            <tr>
-              <td>Division: <%= "#{@judge.division}" %></td>
-            </tr>
-            </tbody>
-          </table>
-      </div>
-    </div>
-    <hr class="featurette-divider">
-    <div class="row">
-        <h4>Donors</h4>
-        <table>
-          <thead>
+    <table class="table table-condensed">
+      <tbody>
+        <tr>
+          <td>Agency:</td>
+          <td><%= "#{@judge.agency.titlecase}" %></td>
+        </tr>
+        <tr>
+          <td>Position:</td>
+          <td><%= "#{@judge.position.titlecase}" %></td>
+        </tr>
+        <tr>
+          <td>Division:</td>
+          <td><%= "#{@judge.division.titlecase}" %></td>
+        </tr>
+      </tbody>
+    </table>
+    <h4>Gifts Recieved</h4>
+    <table class="table table-hover">
+      <tr>
+        <th>Description</th>
+        <th>Date Given</th>
+        <th>Value</th>
+        <th>Donor</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% for @gift in @judge.gifts %>
           <tr>
-            <th>Donor</th>
-            <th>Affiliation</th>
+            <td><%= "#{@gift.description.titlecase}" %></td>
+            <td>
+              <% unless @gift.date_given.nil? %>
+                <%= "#{@gift.date_given.to_formatted_s(:long)}" %>
+              <% end %>
+            </td>
+            <td><%= number_to_currency "#{@gift.value}" %></td>
+            <td><%= link_to "#{@gift.donor.name.titlecase}", donor_path(@gift.donor.id) %></td>
           </tr>
-          </thead>
-          <tbody>
-          <% for @donor in @judge.donors %>
-              <tr>
-                <td><%= link_to "#{@donor.name.titlecase}", donor_path(@donor.id) %></td>
-                <td><%= "#{@donor.affiliation.titlecase}" %></td>
-              </tr>
-          <% end %>
-          </tbody>
-        </table>
-    </div>
+      <% end %>
+      </tbody>
+    </table>
   </div>
 </div>
-<!-- end tables -->

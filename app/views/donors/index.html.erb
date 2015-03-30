@@ -14,8 +14,12 @@
       <tbody>
       <% for @donor in @donors %>
         <tr>
-          <td><%= "#{@donor.name}" %></td>
-          <td><%= "#{@donor.affiliation}" %></td>
+          <td><%= link_to "#{@donor.name.titlecase}", donor_path(@donor)  %></td>
+          <td>
+            <% unless @donor.affiliation.nil? %>
+              <%= "#{@donor.affiliation.titlecase}" %>
+            <% end %>
+          </td>
           <td><%= number_to_currency @donor.total_value %></td>
           <td><%= "#{@donor.gift_count}" %></td>
         </tr>

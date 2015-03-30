@@ -55,7 +55,11 @@ $(document).ready(function() {
     	})
 		.style("fill", function(d) {
 		    return color(d.group);
-	    });
+	    })
+        .style("cursor", "pointer")
+        .on("click", function(d){
+            window.location = d.url;
+        });
 
     force.nodes(nodes)
         .links(links)

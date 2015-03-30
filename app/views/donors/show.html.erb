@@ -1,2 +1,34 @@
-<p id="notice"><%= notice %></p>
-<%= link_to 'Back', donors_path %>
+<div class="container">
+  <h2>
+    <%= "#{@donor.name.titlecase}" %>
+      <% unless @donor.affiliation.nil? %>
+        (<%= "#{@donor.affiliation.titlecase}" %>)
+      <% end %>
+  </h2>
+  <div class="row">
+    <h4>Gifts Donated</h4>
+    <table class="table table-hover">
+      <tr>
+        <th>Description</th>
+        <th>Date Given</th>
+        <th>Value</th>
+        <th>Donor</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% for @gift in @donor.gifts %>
+          <tr>
+            <td><%= "#{@gift.description.titlecase}" %></td>
+            <td>
+              <% unless @gift.date_given.nil? %>
+                <%= "#{@gift.date_given.to_formatted_s(:long)}" %>
+              <% end %>
+            </td>
+            <td><%= number_to_currency "#{@gift.value}" %></td>
+            <td><%= link_to "#{@gift.judge.full_name}", judge_path(@gift.judge.id) %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
