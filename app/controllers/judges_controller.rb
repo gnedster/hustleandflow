@@ -28,12 +28,12 @@ class JudgesController < ApplicationController
                                             :params => {
                                             :format => :xml,
                                             :action => :query,
-                                            :titles => @judge.full_name,
-                                            :prop => 'info'
+                                            :list => :search,
+                                            :srsearch => @judge.first_name + @judge.last_name
         }
       })
 
-      @ballotpediaLink = BASE_URL + res['api']['query']['pages']['page']['title'].gsub!(' ', '_')
+      @ballotpediaLink = BASE_URL + res['api']['query']['search']['p']['title'].gsub!(' ', '_')
     rescue
       logger.warn 'Searching Ballotpedia failed.'
     ensure
