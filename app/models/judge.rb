@@ -4,7 +4,7 @@ class Judge < ActiveRecord::Base
   has_many  :donors, :through => :gifts
 
   def full_name
-    "#{self.first_name.titlecase} #{self.last_name.titlecase}"
+    "#{self.first_name.titlecase}#{self.middle_name.titlecase} #{self.last_name.titlecase}"
   end
 
   def total_value

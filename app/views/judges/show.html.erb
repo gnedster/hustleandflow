@@ -1,7 +1,14 @@
 <div class="container">
-  <h2>
-    <%= "#{@judge.full_name}" %>
-  </h2>
+  <div>
+    <h2>
+      <%= "#{@judge.full_name}" %>
+      <% unless @ballotpediaLink.nil? %>
+        <small>
+          (<a target="_blank" href=<%= "#{@ballotpediaLink}" %>>Ballotpedia</a>)
+        </small>
+      <% end %>
+    </h2>
+  </div>
   <div class="row">
     <table class="table table-condensed">
       <tbody>

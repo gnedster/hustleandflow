@@ -12,6 +12,7 @@ gem 'rails3-jquery-autocomplete'
 gem 'gon'
 gem 'js-routes'
 gem 'underscore-rails'
+gem 'rest-client'
 
 gem 'd3_rails'
 gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
