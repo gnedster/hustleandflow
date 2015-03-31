@@ -20,6 +20,7 @@
 //= require bootstrap/bootstrap-transition
 //= require jquery.tipsy/jquery.tipsy
 //= require underscore
+//= require cal-heatmap/cal-heatmap.min
 //= require_self
 
 String.prototype.titleize = function() {

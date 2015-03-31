@@ -29,6 +29,10 @@ class VisualizationController < ApplicationController
       }
     ]
 
+    gon.dateFrequency = Hash[Gift.where('date_given IS NOT NULL')
+      .count(:group => ["DATE(date_given)"])
+      .map {|k, v| [DateTime.parse(k).strftime('%s'), v] }]
+
     gon.links = Gift.where('judge_id IS NOT NULL AND donor_id IS NOT NULL AND value IS NOT NULL')
       .map! { |g| {'source' => g.donor_id, 'target' => g.judge_id, 'value' => g.value }}
 

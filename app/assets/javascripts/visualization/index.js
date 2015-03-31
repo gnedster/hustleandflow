@@ -1,4 +1,15 @@
 $(document).ready(function() {
+    var cal = new CalHeatMap();
+    cal.init({
+        data: gon.dateFrequency,
+        tooltip: true,
+        start: new Date(2011, 0),
+        id : "cal-heatmap",
+        domain : "month",
+        subDomain : "day",
+        range : 12,
+    });
+
 	//See gon variables in VisualizationController
 	var nodes = _.values(gon.judges).concat(_.values(gon.donors)),
 		links = _.map(gon.links, function(l) {
