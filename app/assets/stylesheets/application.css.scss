@@ -24,6 +24,13 @@ footer {
   width:100%
 }
 
+.hero-unit {
+  h1 {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+  }
+}
+
 .ui-autocomplete {
      z-index: 9999 !important;
 }
